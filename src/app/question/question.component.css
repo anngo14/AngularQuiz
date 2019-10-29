@@ -1,0 +1,17 @@
+.questionOptions {
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0;
+  }
+  #questionLabel{
+      width: 85%;
+      text-align: left;
+  }
+  .questionBtn {
+    margin: 5px;
+  }
+  .questionField{
+      width: 65%;
+  }
+  #questionSubmit{
+  }

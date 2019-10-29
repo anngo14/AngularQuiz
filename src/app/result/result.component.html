@@ -1,0 +1,19 @@
+<mat-grid-list cols="5" rowHeight="75px">
+    <mat-grid-tile colspan="2" rows=":.5"><h2 id="questionLabel">Results</h2></mat-grid-tile>
+    <mat-grid-tile colspan="3" rows=":.5"></mat-grid-tile>
+</mat-grid-list>
+    <mat-grid-list cols="5" rowHeight="1:1">
+        <mat-grid-tile></mat-grid-tile>
+        <mat-grid-tile colspan="3">
+            <div class="resultContainer">
+                <div class="quizResult">
+                    <h2 style="margin-left: 5%">Score {{correct / totalQuestions | percent}}</h2>
+                    <h3>Correct: {{correct}}</h3>
+                    <h3>Incorrect: {{incorrect}}</h3>
+                </div>
+                <button mat-flat-button style="margin-left: 0" (click)="backToHome()" color="warn">Back To Home</button>
+                <button mat-flat-button (click)="retryQuiz()" color="primary">Retry</button>
+            </div>
+        </mat-grid-tile>
+        <mat-grid-tile></mat-grid-tile>
+    </mat-grid-list>

@@ -1,0 +1,30 @@
+<div *ngFor="let questions of questionList">
+    <mat-grid-list cols="5" rowHeight="75px">
+        <mat-grid-tile colspan="2" rows=":.5"><label id="questionLabel">{{questions.question}}</label></mat-grid-tile>
+        <mat-grid-tile colspan="3" rows=":.5"></mat-grid-tile>
+    </mat-grid-list>
+    <mat-grid-list cols="5" rowHeight="1:1">
+            <mat-grid-tile colspan="3">
+            <div class="questionField">
+                <mat-radio-group
+                aria-labelledby="questionAnswers"
+                class="questionOptions"
+                [(ngModel)]="answerChoices[questions.id]"> 
+                    <mat-radio-button class="questionBtn"  *ngFor="let choice of questions.choices" [value]="choice">
+                        {{choice}}
+                    </mat-radio-button>
+                </mat-radio-group>
+                <div>You selected: {{answerChoices[questions.id]}}</div>
+            </div>
+            </mat-grid-tile>
+        <mat-grid-tile colspan="2"></mat-grid-tile>
+    </mat-grid-list>
+    <mat-divider></mat-divider>
+</div>
+<!-- Bottom Submit Button-->
+<mat-grid-list cols="5" rowHeight="100px">
+    <mat-grid-tile colspan="4"></mat-grid-tile>
+    <mat-grid-tile>
+        <button mat-stroked-button id="questionSubmit" (click)="submitQuiz()" color="primary">Submit</button>
+    </mat-grid-tile>
+</mat-grid-list>

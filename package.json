@@ -1,5 +1,5 @@
 {
-  "name": "quiz-angular",
+  "name": "quiz",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -12,13 +12,16 @@
   "private": true,
   "dependencies": {
     "@angular/animations": "~8.2.11",
+    "@angular/cdk": "~8.2.3",
     "@angular/common": "~8.2.11",
     "@angular/compiler": "~8.2.11",
     "@angular/core": "~8.2.11",
     "@angular/forms": "~8.2.11",
+    "@angular/material": "^8.2.3",
     "@angular/platform-browser": "~8.2.11",
     "@angular/platform-browser-dynamic": "~8.2.11",
     "@angular/router": "~8.2.11",
+    "cors": "^2.8.5",
     "rxjs": "~6.4.0",
     "tslib": "^1.10.0",
     "zone.js": "~0.9.1"
@@ -43,5 +46,9 @@
     "ts-node": "~7.0.0",
     "tslint": "~5.15.0",
     "typescript": "~3.5.3"
-  }
+  },
+  "description": "This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.13.",
+  "main": "karma.conf.js",
+  "author": "",
+  "license": "ISC"
 }

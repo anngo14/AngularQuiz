@@ -1,0 +1,26 @@
+<mat-grid-list cols="5" rowHeight="100px">
+    <mat-grid-tile colspan="3"><div class="topicHeader">Available Topics: <span style="font-style: italic">Topic 1, Topic 2, Topic 3, Topic 4</span></div></mat-grid-tile>
+    <mat-grid-tile colspan="2"></mat-grid-tile>
+</mat-grid-list>
+<mat-grid-list cols="5" rowHeight="1:1">
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile colspan="3">
+    <div class="topicField">
+        <h2>Topics</h2>
+        <form #topicForm="ngForm">
+        <mat-form-field>
+            <mat-select placeholder="Select a Topic" [(value)]="topic" name="selectedTopic" #selectedTopic="ngModel" ngModel required>
+                <mat-option >--Select a Topic--</mat-option>
+                <mat-option value="topic1">Topic 1</mat-option>
+                <mat-option value="topic2">Topic 2</mat-option>
+                <mat-option value="topic3">Topic 3</mat-option>
+                <mat-option value="topic4">Topic 4</mat-option>
+            </mat-select>
+            <mat-error *ngIf="selectedTopic">Please choose a Topic</mat-error>
+        </mat-form-field>
+        </form>
+        <button mat-stroked-button color="primary" (click)="chooseTopic()">Go To Quiz</button>
+    </div>
+    </mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+</mat-grid-list>

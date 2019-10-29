@@ -1,0 +1,13 @@
+.topicField{
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+}
+.topicField mat-form-field{
+    width: 100%;
+}
+.topicHeader{
+    display: flex;
+    text-align: left;
+    width: 85%;
+}
