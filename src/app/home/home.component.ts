@@ -11,7 +11,7 @@ import { Router } from '@angular/router';
 export class HomeComponent implements OnInit {
 
   topic: string;
-  available: string[] = ["topic1", "topic2", "topic3", "topic4"];
+  available: string[] = ["topic1", "topic2", "topic3", "topic4", "topic5"];
 
   constructor(private d:DataService, private r: Router) { }
 

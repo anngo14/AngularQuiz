@@ -35,8 +35,12 @@ app.route('/api/topics/:name').get((req, res) => {
             res.json(topic3);
             break;
         case 'topic4':
-            var topic4 = require('./src/app/json objects/topic3.json');
+            var topic4 = require('./src/app/json objects/topic4.json');
             res.json(topic4);
+            break;
+        case 'topic5':
+            var topic5 = require('./src/app/json objects/topic5.json');
+            res.json(topic5);
             break;
         default:
             res.send("unknown topic");
