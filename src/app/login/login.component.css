@@ -3,3 +3,7 @@
     flex-direction: column;
     width: 65%;
 }
+.loginField form{
+    display: flex;
+    flex-direction: column;
+}

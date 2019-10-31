@@ -25,7 +25,7 @@ app.route('/api/topics/:name').get((req, res) => {
         case 'topic1':
             var topic1 = require('./src/app/json objects/topic1.json');
             res.json(topic1);
-            break;
+            break;``
         case 'topic2':
             var topic2 = require('./src/app/json objects/topic2.json');
             res.json(topic2);

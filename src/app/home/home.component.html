@@ -7,7 +7,7 @@
     <mat-grid-tile colspan="3">
     <div class="topicField">
         <h2>Topics</h2>
-        <form #topicForm="ngForm">
+        <form #topicForm="ngForm" (ngSubmit)="chooseTopic()">
         <mat-form-field>
             <mat-select placeholder="Select a Topic" [(value)]="topic" name="selectedTopic" #selectedTopic="ngModel" ngModel required>
                 <mat-option >--Select a Topic--</mat-option>
@@ -19,8 +19,8 @@
             </mat-select>
             <mat-error *ngIf="selectedTopic">Please choose a Topic</mat-error>
         </mat-form-field>
+        <button mat-stroked-button color="primary" type="submit">Go To Quiz</button>    
         </form>
-        <button mat-stroked-button color="primary" (click)="chooseTopic()">Go To Quiz</button>
     </div>
     </mat-grid-tile>
     <mat-grid-tile></mat-grid-tile>

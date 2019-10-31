@@ -4,16 +4,18 @@
     <div class="loginField" >
         <h2>Login</h2>
         <mat-error *ngIf="error">Invalid Username or Password</mat-error>
+        <form (ngSubmit)="redirectToHome()">
         <mat-form-field>
             <input matInput name="userInput" placeholder="Username" [(ngModel)]="userInput" [formControl]="username" required>
-        <mat-error *ngIf="username.invalid">{{getErrorMessage()}}</mat-error>
+            <mat-error *ngIf="username.invalid">{{getErrorMessage()}}</mat-error>
         </mat-form-field>  
         <mat-form-field>
             <input matInput type="password" name="passInput" placeholder="Password" [(ngModel)]="passInput" [formControl]="password" required>
             <mat-error *ngIf="password.invalid">{{getErrorMessage()}}</mat-error>
         </mat-form-field> 
-        <button mat-stroked-button color="primary" (click)="redirectToHome()">Log In</button>
-        <button mat-stroked-button color="warn" disabled>Reset Password</button>
+        <button mat-stroked-button color="primary" type="submit">Log In</button> 
+        <!-- <button mat-stroked-button color="warn" disabled>Reset Password</button> -->
+        </form>
     </div>
     </mat-grid-tile>
     <mat-grid-tile></mat-grid-tile>

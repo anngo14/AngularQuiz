@@ -1,7 +1,8 @@
+<form (ngSubmit)="submitQuiz()">
 <div *ngFor="let questions of questionList">
     <mat-grid-list cols="5" rowHeight="75px">
-        <mat-grid-tile colspan="2" rows=":.5"><label id="questionLabel">{{questions.question}}</label></mat-grid-tile>
-        <mat-grid-tile colspan="3" rows=":.5"></mat-grid-tile>
+        <mat-grid-tile colspan="3" rows=":.5"><label id="questionLabel">{{questions.question}}</label></mat-grid-tile>
+        <mat-grid-tile colspan="2" rows=":.5"></mat-grid-tile>
     </mat-grid-list>
     <mat-grid-list cols="5" rowHeight="1:1">
             <mat-grid-tile colspan="3">
@@ -9,7 +10,7 @@
                 <mat-radio-group
                 aria-labelledby="questionAnswers"
                 class="questionOptions"
-                [(ngModel)]="answerChoices[questions.id]"> 
+                [(ngModel)]="answerChoices[questions.id]" name="questions.id"> 
                     <mat-radio-button class="questionBtn"  *ngFor="let choice of questions.choices" [value]="choice">
                         {{choice}}
                     </mat-radio-button>
@@ -25,6 +26,7 @@
 <mat-grid-list cols="5" rowHeight="100px">
     <mat-grid-tile colspan="4"></mat-grid-tile>
     <mat-grid-tile>
-        <button mat-stroked-button id="questionSubmit" (click)="submitQuiz()" color="primary">Submit</button>
+        <button mat-stroked-button id="questionSubmit" type="submit" color="primary">Submit</button>
     </mat-grid-tile>
 </mat-grid-list>
+</form>
