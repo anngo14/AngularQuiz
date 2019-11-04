@@ -1,0 +1,57 @@
+[
+    {
+        "id": 0,
+        "question": "Question 1. What is the scientific name of a butterfly",
+        "answer": "Rhopalocera",
+        "choices": [
+            "Apis",
+            "Coleoptera",
+            "Formicidae",
+            "Rhopalocera"
+        ]
+    },
+    {
+        "id": 1,
+        "question": "Question 2. How hot is the surface of the sun?",
+        "answer": "5,778 K",
+        "choices": [
+            "1,233 K",
+            "5,778 K",
+            "12,130 K",
+            "101,300 K"
+        ]
+    },
+    {
+        "id": 2,
+        "question": "Question 3. How far is the moon from Earth?",
+        "answer": "238,400 miles (384,400 km)",
+        "choices": [
+            "7,918 miles (12,742 km)",
+            "86,881 miles (139,822 km)",
+            "238,400 miles (384,400 km)",
+            "35,980,000 miles (57,910,000 km)"
+        ]
+    },
+    {
+        "id": 3,
+        "question": "Question 4. What is 70 degrees Farenheight in Celcius?",
+        "answer": "21.1111",
+        "choices": [
+            "18.889",
+            "20",
+            "21.1111",
+            "158"
+        ]
+    },
+    {
+        "id": 4,
+        "question": "Question 5. How tall is Mount Everest?",
+        "answer": "29,029 ft (8,847 m)",
+        "choices": [
+            "6,683 ft (2,037 m)",
+            "7,918 ft (2,413 m)",
+            "19,341 ft (5,895 m)",
+            "29,029 ft (8,847 m)"
+        ]
+    }
+]

@@ -18,6 +18,7 @@ import { TopicService } from './services/topic.service';
 import { QuizModule } from './quiz/quiz.module';
 import { LoginComponent } from './login/login.component';
 import { ErrorComponent } from './error/error.component';
+import { NotfoundComponent } from './notfound/notfound.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { ErrorComponent } from './error/error.component';
     routingComponents,
     LogoutComponent,
     LoginComponent,
-    ErrorComponent
+    ErrorComponent,
+    NotfoundComponent
   ],
   imports: [
     BrowserModule,

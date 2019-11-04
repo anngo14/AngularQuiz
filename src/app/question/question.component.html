@@ -10,7 +10,7 @@
                 <mat-radio-group
                 aria-labelledby="questionAnswers"
                 class="questionOptions"
-                [(ngModel)]="answerChoices[questions.id]" name="questions.id"> 
+                [(ngModel)]="answerChoices[questions.id]" name={{questions.id}}> 
                     <mat-radio-button class="questionBtn"  *ngFor="let choice of questions.choices" [value]="choice">
                         {{choice}}
                     </mat-radio-button>

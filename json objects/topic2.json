@@ -1,0 +1,57 @@
+[
+    {
+        "id": 0,
+        "question": "Question 1. \"Closing Time\" and \"Secret Smile\" were songs by which group?",
+        "answer": "Semisonic",
+        "choices": [
+            "Green Day",
+            "The Verve",
+            "Semisonic",
+            "Vertical Horizon"
+        ]
+    },
+    {
+        "id": 1,
+        "question": "Question 2. What was the number one song of 2018?",
+        "answer": "\"One Kiss\" by Calvin Harris & Dua Lipa",
+        "choices": [
+            "\"Perfect\" by Ed Sheeran",
+            "\"One Kiss\" by Calvin Harris & Dua Lipa",
+            "\"God's Plan\" by Drake",
+            "\"Shotgun\" by George Ezra"
+        ]
+    },
+    {
+        "id": 2,
+        "question": "Question 3. Who is the best selling artists of all time?",
+        "answer": "The Beatles",
+        "choices": [
+            "Michael Jackson",
+            "Madonna",
+            "Led Zeppelin",
+            "The Beatles"
+        ]
+    },
+    {
+        "id": 3,
+        "question": "Question 4. Which of these songs is the best performing song of all time (1958-2018)?",
+        "answer": "\"The Twist\" by Chubby Checker",
+        "choices": [
+            "\"Uptown Funk\" by Mark Ronson ft. Bruno Mars",
+            "\"Smooth\" by Santana ft. Rob Thomas",
+            "\"I Gotta Feeling\" by The Black Eyed Peas",
+            "\"The Twist\" by Chubby Checker"
+        ]
+    },
+    {
+        "id": 4,
+        "question": "Question 5. Which of these songs spent the most amount of time on the Hot 100 billboard?",
+        "answer": "\"Radioactive\" by Imagine Dragons",
+        "choices": [
+            "\"Radioactive\" by Imagine Dragons",
+            "\"I'm Yours\" by Jason Mraz",
+            "\"Irreplaceable\" by Beyonce",
+            "\"Rolling in the Deep\" by Adele"
+        ]
+    }
+]
