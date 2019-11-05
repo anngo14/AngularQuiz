@@ -47,6 +47,13 @@ app.post('/result', (req, res) => {
     output.write(log);
     res.sendFile(angularEntry);
 });
+app.post('/thankyou', (req, res) => {
+    let urlPath = req.url;
+    let date = new Date();
+    let log = 'Path changed to ' + urlPath + '. ' + date + '\n';
+    output.write(log);
+    res.sendFile(angularEntry);
+});
 app.get('/logout', (req, res) => {
     let urlPath = req.url;
     let date = new Date();

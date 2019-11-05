@@ -50,7 +50,7 @@ export class QuestionComponent implements OnInit {
     }
     this.data.changeCorrect(this.correct);
     this.data.changeIncorrect(this.incorrect);
-    this.r.navigate(['/result']);
+    this.r.navigate(['/thankyou']);
   }
 
 }
