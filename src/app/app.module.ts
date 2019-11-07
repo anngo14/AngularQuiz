@@ -19,6 +19,9 @@ import { QuizModule } from './quiz/quiz.module';
 import { LoginComponent } from './login/login.component';
 import { ErrorComponent } from './error/error.component';
 import { NotfoundComponent } from './notfound/notfound.component';
+import { ThankyouComponent } from './thankyou/thankyou.component';
+import { MatDialogModule } from '@angular/material';
+
 
 @NgModule({
   declarations: [
@@ -27,7 +30,8 @@ import { NotfoundComponent } from './notfound/notfound.component';
     LogoutComponent,
     LoginComponent,
     ErrorComponent,
-    NotfoundComponent
+    NotfoundComponent,
+    ThankyouComponent
   ],
   imports: [
     BrowserModule,
@@ -42,7 +46,8 @@ import { NotfoundComponent } from './notfound/notfound.component';
     MatGridListModule,
     MatMenuModule,
     HttpClientModule,
-    QuizModule
+    QuizModule,
+    MatDialogModule
   ],
   providers: [UserService, DataService],
   bootstrap: [AppComponent]

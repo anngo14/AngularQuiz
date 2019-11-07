@@ -23,7 +23,7 @@ app.use(bodyparser.json());
 //Get Request for all users
 app.route('/api/users').get((req, res) => {
     let date = new Date();
-    var users = require('../json objects/users.json');
+    var users = require('./users.json');
     res.json(users);
     output.write('Users JSON object was returned. ' + date + '\n');
 });
