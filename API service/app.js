@@ -29,7 +29,7 @@ app.route('/api/users').get((req, res) => {
 });
 
 //Post Request for topics taking a JSON object as a parameter
-/* THIS IS A TEST FOR POST NEEDS TO BE CHANGED FOR ENTERING TOPIC NAME AND RETURNING TOPIC.JSON */
+/* THIS IS A TEST FOR POST NEEDS TO BE CHANGED FOR ENTERING TOPIC NAME AND RETURNING TOPIC.JON */
 app.post('/api/topic', (req, res) => {
     let date = new Date();
     console.log(JSON.stringify(req.body) + ' was entered as a parameter. ' + date + '\n');
