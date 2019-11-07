@@ -21,7 +21,7 @@ export class TopicService {
     var topicJSON:topicName = {
       topic: topic
     }
-    return this.http.post<topicName>(this.posturl, topicJSON, this.httpOptions);
+    return this.http.post<topic[]>(this.posturl, topicJSON, this.httpOptions);
   }
   
   getQuestions(topicNum:string){
