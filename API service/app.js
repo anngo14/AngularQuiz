@@ -9,8 +9,33 @@ var corsOptions = {
     optionsSuccessStatus: 200
 };
 
-//Write stream
-var output = fs.createWriteStream('logs/apilog.txt', {'flags' : 'a'});
+const { promisify } = require('util');
+
+const copyFile = promisify(fs.copyFile);	
+
+//Write Stream	
+var output = fs.createWriteStream('logs/apilog.txt', {'flags': 'a'});	
+
+//File Stats	
+fs.stat('logs/apilog.txt', function (err, stats) {	
+    if (err) throw err;	
+    //console.log('stats: ' + JSON.stringify(stats));	
+    //Get the file size	
+    var fileSize = stats.size;	
+    console.log(fileSize + ' bytes');	
+    //If file size exceeds 1 MB, move the contents to a backup log	
+    if(fileSize > 1000000) {	
+        async function createBackup() {	
+            await copyFile('logs/apilog.txt', 'logs/backup/apilog-backup.txt'),	
+                //Cleaning the contents of apilog	
+                fs.writeFile('logs/apilog.txt', '', function() {	
+                    console.log('Cleanup done.');	
+                });	
+                console.log("Backup created successfully!");	
+        }	
+        createBackup().catch(error => console.error(error));	
+    }	
+});
 
 //Environment PORT
 const PORT = process.env.PORT || 5000;
