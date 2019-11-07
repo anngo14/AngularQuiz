@@ -12,7 +12,7 @@ import { TopicService } from '../services/topic.service';
 export class HomeComponent implements OnInit {
 
   topic: string;
-  available: string[] = ["topic1", "topic2", "topic3", "topic4", "topic5"];
+  available: string[] = ["topic1", "topic2", "topic3", "topic4", "topic5", "topic6"];
 
   constructor(private d:DataService, private r: Router, private t: TopicService) { }
 

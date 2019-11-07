@@ -11,7 +11,6 @@ export class ResultComponent implements OnInit {
 
   correct: number;
   incorrect: number;
-  totalQuestions: number = 5;
   constructor(private data: DataService, private r:Router) { }
 
   ngOnInit() {

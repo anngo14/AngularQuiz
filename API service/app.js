@@ -9,33 +9,8 @@ var corsOptions = {
     optionsSuccessStatus: 200
 };
 
-const { promisify } = require('util');
-
-const copyFile = promisify(fs.copyFile);
-
-//Write Stream
-var output = fs.createWriteStream('logs/apilog.txt', {'flags': 'a'});
-
-//File Stats
-fs.stat('logs/apilog.txt', function (err, stats) {
-    if (err) throw err;
-    //console.log('stats: ' + JSON.stringify(stats));
-    //Get the file size
-    var fileSize = stats.size;
-    console.log(fileSize + ' bytes');
-    //If file size exceeds 1 MB, move the contents to a backup log
-    if(fileSize > 1000000) {
-        async function createBackup() {
-            await copyFile('logs/apilog.txt', 'logs/backup/apilog-backup.txt'),
-                //Cleaning the contents of apilog
-                fs.writeFile('logs/apilog.txt', '', function() {
-                    console.log('Cleanup done.');
-                });
-                console.log("Backup created successfully!");
-        }
-        createBackup().catch(error => console.error(error));
-    }
-});
+//Write stream
+var output = fs.createWriteStream('logs/apilog.txt', {'flags' : 'a'});
 
 //Environment PORT
 const PORT = process.env.PORT || 5000;
@@ -84,12 +59,16 @@ app.post('/api/topic', (req, res) => {
             var topic5 = require('./topic5.json');
             res.json(topic5);
             break;
+        case 'topic6':
+            var topic6 = require('./topic6.json');
+            res.json(topic6);
+            break;    
         default:
             res.send("unknown topic");
             res.end();
     }
     //Logs according to incoming parameter
-    if(topic != 'topic1' || topic != 'topic2' || topic != 'topic3' || topic != 'topic4' || topic != 'topic5'){
+    if(topic != 'topic1' || topic != 'topic2' || topic != 'topic3' || topic != 'topic4' || topic != 'topic5' || topic != 'topic6'){
         output.write(topic + ' was requested from the user...This is an invalid request. ' + date + '\n');
 
     } else {

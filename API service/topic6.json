@@ -1,0 +1,112 @@
+[
+    {
+        "id": 0,
+        "question": "Question 1. Which one has the largest fangs?",
+        "answer": "Gaboon Viper",
+        "choices": [
+            "King Cobra",
+            "Pit Viper",
+            "Gaboon Viper",
+            "Western Diamondback RattleSnake"
+        ]
+    },
+    {
+        "id": 1,
+        "question": "Question 2. which is the biggest land carnivore?",
+        "answer": "Polar Bear",
+        "choices": [
+            "Walrus",
+            "Polar Bear",
+            "Grisley Bear",
+            "Elephant Seal"
+        ]
+    },
+    {
+        "id": 2,
+        "question": "Question 3. Which of the following is found only in Africa?",
+        "answer": "Grey Parrot",
+        "choices": [
+            "Toucan",
+            "Macaw",
+            "Grey Parrot",
+            "Magpie"
+        ]
+    },
+    {
+        "id": 3,
+        "question": "Question 4. Which of the following is exclusively an herbivore?",
+        "answer": "Ibex",
+        "choices": [
+            "Hippopotamus",
+            "Aardvark",
+            "Ibex",
+            "Ibis"
+        ]
+    },
+    {
+        "id": 4,
+        "question": "Question 5. Which is the biggest species of tiger?",
+        "answer": "Siberian Tiger",
+        "choices": [
+            "Siberian Tiger",
+            "Royal Bengal Tiger",
+            "Javan Tiger",
+            "Sumatran Tiger"
+        ]
+    },
+    {
+        "id": 5,
+        "question": "Question 6. Which one has the second highest biting force?",
+        "answer": "Turtle",
+        "choices": [
+            "Hyena",
+            "Turtle",
+            "Crocodile",
+            "Lion"
+        ]
+    },
+    {
+        "id": 6,
+        "question": "Question 7. Which of the following has the highest wingspan?",
+        "answer": "Wandering Albatross",
+        "choices": [
+            "African Condor",
+            "Wandering Albatross",
+            "Golden Eagle",
+            "Harpy Eagle"
+        ]
+    },
+    {
+        "id": 7,
+        "question": "Question 8. Which one of the following primarily eats fish?",
+        "answer": "Osprey",
+        "choices": [
+            "Osprey",
+            "Bald Eagle",
+            "Peregrene Falcon",
+            "Swift"
+        ]
+    },
+    {
+        "id": 8,
+        "question": "Question 9. Which mammal has the most neck vertebrae?",
+        "answer": "Sloth",
+        "choices": [
+            "Manatee",
+            "Sloth",
+            "Giraffe",
+            "Elephant"
+        ]
+    },
+    {
+        "id": 9,
+        "question": "Question 10. Which one of them is the fastest?",
+        "answer": "Sailfish",
+        "choices": [
+            "Sailfish",
+            "Swordfish",
+            "Sawfish",
+            "Marlin"
+        ]
+    }
+]

@@ -11,11 +11,13 @@
         <mat-form-field>
             <mat-select placeholder="Select a Topic" [(value)]="topic" name="selectedTopic" #selectedTopic="ngModel" ngModel required>
                 <mat-option >--Select a Topic--</mat-option>
+                <mat-option value="topic6">Animal Kingdom</mat-option>
                 <mat-option value="topic1">Science</mat-option>
                 <mat-option value="topic2">Music</mat-option>
                 <mat-option value="topic3">Movies</mat-option>
                 <mat-option value="topic4">Sports</mat-option>
                 <mat-option value="topic5">Geography</mat-option>
+                
             </mat-select>
             <mat-error *ngIf="selectedTopic">Please choose a Topic</mat-error>
         </mat-form-field>
