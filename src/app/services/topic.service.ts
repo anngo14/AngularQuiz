@@ -17,14 +17,10 @@ export class TopicService {
       'Content-Type': 'application/json'
     })
   };
-  postTopic(topic:string){
+  getQuestions(topic:string){
     var topicJSON:topicName = {
       topic: topic
     }
     return this.http.post<topic[]>(this.posturl, topicJSON, this.httpOptions);
-  }
-  
-  getQuestions(topicNum:string){
-    return this.http.get<topic[]>(this.url.concat(topicNum));
   }
 }

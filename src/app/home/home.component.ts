@@ -27,7 +27,7 @@ export class HomeComponent implements OnInit {
   chooseTopic(){
     this.d.changeTopic(this.topic);
     //posts topic to api service 
-    this.t.postTopic(this.topic).subscribe();
+    this.t.getQuestions(this.topic).subscribe();
     if(this.available.includes(this.topic))
     {
       this.r.navigate(['/quiz']);
