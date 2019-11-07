@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { DataService } from '../services/data.service';
 import { Router } from '@angular/router';
+import { TopicService } from '../services/topic.service';
 
 
 @Component({
@@ -13,7 +14,7 @@ export class HomeComponent implements OnInit {
   topic: string;
   available: string[] = ["topic1", "topic2", "topic3", "topic4", "topic5"];
 
-  constructor(private d:DataService, private r: Router) { }
+  constructor(private d:DataService, private r: Router, private t: TopicService) { }
 
   ngOnInit() {
     this.d.userName.subscribe(data => {
@@ -25,6 +26,8 @@ export class HomeComponent implements OnInit {
   }
   chooseTopic(){
     this.d.changeTopic(this.topic);
+    //posts topic to api service 
+    this.t.postTopic(this.topic).subscribe();
     if(this.available.includes(this.topic))
     {
       this.r.navigate(['/quiz']);

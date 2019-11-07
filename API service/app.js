@@ -5,7 +5,7 @@ var bodyparser = require('body-parser');
 //Allows for localhost:4500 to access this service
 const cors = require('cors');
 var corsOptions = {
-    origin: 'http://localhost:4500',
+    origin: 'http://localhost:4200',
     optionsSuccessStatus: 200
 };
 
