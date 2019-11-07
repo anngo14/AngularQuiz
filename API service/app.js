@@ -71,43 +71,6 @@ app.post('/api/topic', (req, res) => {
         output.write(topic + ' was requested from the user...' + date + '\n');
     }
 });
-//Get Request for each topic
-// app.get('/api/topics/:name', (req, res) => {
-//     const reqName = req.params.name;
-//     let date = new Date();
-//     switch(reqName) {
-//         case 'topic1':
-//             var topic1 = require('./topic1.json');
-//             res.json(topic1);
-//             break;
-//         case 'topic2':
-//             var topic2 = require('./topic2.json');
-//             res.json(topic2);
-//             break;
-//         case 'topic3':
-//             var topic3 = require('./topic3.json');
-//             res.json(topic3);
-//             break;
-//         case 'topic4':
-//             var topic4 = require('./topic4.json');
-//             res.json(topic4);
-//             break;
-//         case 'topic5':
-//             var topic5 = require('./topic5.json');
-//             res.json(topic5);
-//             break;
-//         default:
-//             res.send("unknown topic");
-//             res.end();
-//     }
-//     //Logs according to incoming parameter
-//     if(reqName != 'topic1' || reqName != 'topic2' || reqName != 'topic3' || reqName != 'topic4' || reqName != 'topic5'){
-//         output.write(reqName + ' was requested from the user...This is an invalid request. ' + date + '\n');
-
-//     } else {
-//         output.write(reqName + ' was requested from the user...' + date + '\n');
-//     }
-// });
 
 //Starts server on PORT
 app.listen(PORT, () => {

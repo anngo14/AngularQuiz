@@ -29,7 +29,7 @@ export class QuestionComponent implements OnInit {
     });
     this.data.topicSelected.subscribe(message => {
       this.topic = message;
-      this.s.postTopic(this.topic).subscribe(data => this.questionList = data);
+      this.s.getQuestions(this.topic).subscribe(data => this.questionList = data);
     });
   }
   submitQuiz(){
