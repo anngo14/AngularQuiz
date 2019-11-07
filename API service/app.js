@@ -38,7 +38,7 @@ app.post('/api/topic', (req, res) => {
 });
 //Get Request for each topic
 app.get('/api/topics/:name', (req, res) => {
-    const reqName = req.param('name');
+    const reqName = req.params.name;
     let date = new Date();
     switch(reqName) {
         case 'topic1':
