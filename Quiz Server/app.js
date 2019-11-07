@@ -3,8 +3,33 @@ var http = require('http');
 var path = require('path');
 var fs = require('fs');
 
+const { promisify } = require('util');
+
+const copyFile = promisify(fs.copyFile);
+
 //Write Stream
 var output = fs.createWriteStream('logs/serverlog.txt', {'flags': 'a'});
+
+//File Stats
+fs.stat('logs/serverlog.txt', function (err, stats) {
+    if (err) throw err;
+    //console.log('stats: ' + JSON.stringify(stats));
+    //Get the file size
+    var fileSize = stats.size;
+    console.log(fileSize + ' bytes');
+    //If file size exceeds 1 MB, move the contents to a backup log
+    if(fileSize > 1000000) {
+        async function createBackup() {
+            await copyFile('logs/serverlog.txt', 'logs/backup/serverlog-backup.txt'),
+                //Cleaning the contents of serverlog
+                fs.writeFile('logs/serverlog.txt', '', function() {
+                    console.log('Cleanup done.');
+                });
+                console.log("Backup created successfully!");
+        }
+        createBackup().catch(error => console.error(error));
+    }
+});
 
 //Implements Express
 var app = express();

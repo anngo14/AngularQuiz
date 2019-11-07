@@ -98,3 +98,4 @@ Server Running on Port 4500...Thu Nov 07 2019 14:13:19 GMT-0500 (Eastern Standar
 Path changed to /quiz. Thu Nov 07 2019 14:13:21 GMT-0500 (Eastern Standard Time)
 Server Running on Port 4500...Thu Nov 07 2019 14:17:36 GMT-0500 (Eastern Standard Time)
 Path changed to /login. Thu Nov 07 2019 14:18:11 GMT-0500 (Eastern Standard Time)
+Server Running on Port 4500...Thu Nov 07 2019 14:45:57 GMT-0500 (Eastern Standard Time)
