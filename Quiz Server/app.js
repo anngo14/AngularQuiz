@@ -1,5 +1,4 @@
 var express = require('express');
-var http = require('http');
 var path = require('path');
 var fs = require('fs');
 
@@ -102,11 +101,8 @@ app.get('*', (req, res) => {
     res.sendFile(angularEntry);
 });
 
-//Creates Server that uses express
-var server = http.createServer(app);
-
 //Server is started on PORT 
-server.listen(PORT, () => {
+app.listen(PORT, () => {
     let date = new Date();
     console.log(`Server Running on Port ${PORT}...` + date + '\n');
     output.write(`Server Running on Port ${PORT}...` + date + '\n');
