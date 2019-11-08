@@ -5,7 +5,7 @@ var bodyparser = require('body-parser');
 //Allows for localhost:4500 to access this service
 const cors = require('cors');
 var corsOptions = {
-    origin: 'http://localhost:4500',
+    origin: 'http://localhost:4200',
     optionsSuccessStatus: 200
 };
 
@@ -97,6 +97,24 @@ app.post('/api/topic', (req, res) => {
     } else {
         output.write(topic + ' was requested from the user...' + date + '\n');
     }
+});
+
+//Post New Score JSON
+app.route('/api/score')
+ .post((req, res) => {
+    let date = new Date();
+    const scoreOutput = fs.createWriteStream('API service/scores.json');
+    
+    if(req.body.correct === undefined || req.body.incorrect === undefined){
+        console.log("error");
+        output.write('ERROR: ' + JSON.stringify(req.body) + ' is not the correct format for this post request...' + date + '\n');
+        res.send(400, 'Incorrect JSON parameter');
+        return;
+    }
+
+    scoreOutput.write(JSON.stringify(req.body));
+    output.write(JSON.stringify(req.body) + ' was passed as a parameter...' + date);
+    res.send(201, req.body);
 });
 
 //Starts server on PORT
