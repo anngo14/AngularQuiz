@@ -85,7 +85,7 @@ app.post('/api/topic', (req, res) => {
             res.json(topic6);
             break;    
         default:
-            res.send("unknown topic");
+            res.status(404).send("unknown topic");
             res.end();
     }
     //Logs according to incoming parameter
