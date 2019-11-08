@@ -57,8 +57,6 @@ app.route('/api/users').get((req, res) => {
 app.post('/api/topic', (req, res) => {
     let date = new Date();
     let topic = req.body.topic;
-
-    console.log(req.body.topic + ' was entered as a parameter. ' + date + '\n');
     output.write(JSON.stringify(req.body) + ' was entered as a parameter. ' + date + '\n');
 
     switch(topic) {
@@ -91,13 +89,13 @@ app.post('/api/topic', (req, res) => {
             res.end();
     }
     //Logs according to incoming parameter
-    if(topic != 'topic1' || topic != 'topic2' || topic != 'topic3' || topic != 'topic4' || topic != 'topic5' || topic != 'topic6'){
-        output.write(topic + ' was requested from the user...This is an invalid request. ' + date + '\n');
-        console.log(topic + ' was requested from the user...This is an invalid request. ' + date + '\n');
-
-    } else {
+   
+    if(topic === "topic1" || topic === "topic2" || topic === "topic3" || topic === "topic4" || topic === "topic5" || topic === "topic6"){
         output.write(topic + ' was requested from the user...' + date + '\n');
         console.log(topic + ' was requested from the user...' + date + '\n');
+    }else{
+        output.write(topic + ' was requested from the user...This is an invalid request. ' + date + '\n');
+        console.log(topic + ' was requested from the user...This is an invalid request. ' + date + '\n');
     }
 });
 

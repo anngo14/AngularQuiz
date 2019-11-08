@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { DataService } from '../services/data.service';
 import { TopicService } from '../services/topic.service';
 import { Router } from '@angular/router';
@@ -10,11 +10,13 @@ import { score } from '../models/score';
   templateUrl: './question.component.html',
   styleUrls: ['./question.component.css']
 })
-export class QuestionComponent implements OnInit {
+export class QuestionComponent implements OnInit, OnDestroy {
+  
 
   //ngModule for two way binding
   answerChoices:any = [];
   
+  subscription;
   topic: string;
   questionList;
   correct:number = 0;
@@ -29,10 +31,13 @@ export class QuestionComponent implements OnInit {
         this.r.navigate(['/error']);
       }
     });
-    this.data.topicSelected.subscribe(message => {
+    this.subscription = this.data.topicSelected.subscribe(message => {
       this.topic = message;
       this.s.getQuestions(this.topic).subscribe(data => this.questionList = data);
     });
+  }
+  ngOnDestroy(): void {
+    this.subscription.unsubscribe();
   }
   submitQuiz(){
     //Edge case for submitting the quiz early
