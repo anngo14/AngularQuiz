@@ -18,7 +18,7 @@ fs.stat('logs/serverlog.txt', function (err, stats) {
     var fileSize = stats.size;
     console.log(fileSize + ' bytes');
     //If file size exceeds 1 MB, move the contents to a backup log
-    if(fileSize > 2) {
+    if(fileSize > 1000000) {
         //Streams for src and dst log files
         let src = fs.createReadStream('logs/serverlog.txt');
         let dst = fs.createWriteStream('logs/backup/serverlog-backup.txt', {'flags':'a'});
