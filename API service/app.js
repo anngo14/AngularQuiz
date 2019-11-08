@@ -9,10 +9,6 @@ var corsOptions = {
     optionsSuccessStatus: 200
 };
 
-const { promisify } = require('util');
-
-const copyFile = promisify(fs.copyFile);	
-
 //Write Stream	
 var output = fs.createWriteStream('logs/apilog.txt', {'flags': 'a'});	
 
@@ -24,16 +20,20 @@ fs.stat('logs/apilog.txt', function (err, stats) {
     var fileSize = stats.size;	
     console.log(fileSize + ' bytes');	
     //If file size exceeds 1 MB, move the contents to a backup log	
-    if(fileSize > 1000000) {	
-        async function createBackup() {	
-            await copyFile('logs/apilog.txt', 'logs/backup/apilog-backup.txt'),	
-                //Cleaning the contents of apilog	
-                fs.writeFile('logs/apilog.txt', '', function() {	
-                    console.log('Cleanup done.');	
-                });	
-                console.log("Backup created successfully!");	
-        }	
-        createBackup().catch(error => console.error(error));	
+    if(fileSize > 1000000) {	   
+        //Streams for src and dst log files
+        let src = fs.createReadStream('logs/apilog.txt');
+        let dst = fs.createWriteStream('logs/backup/apilog-backup.txt', {'flags':'a'});
+        //Backup data in apilog.txt to apilog-backup.txt
+        let date = new Date();
+        output.write('Data Backed up...' + date + '\n');
+        src.pipe(dst);   
+
+        //Clean up of original src log file     
+        dst.on("close", () => {
+            let clean = fs.createWriteStream('logs/apilog.txt');
+            clean.write('');
+        });
     }	
 });
 
@@ -54,14 +54,12 @@ app.route('/api/users').get((req, res) => {
 });
 
 //Post Request for topics taking a JSON object as a parameter
-/* THIS IS A TEST FOR POST NEEDS TO BE CHANGED FOR ENTERING TOPIC NAME AND RETURNING TOPIC.JSON */
 app.post('/api/topic', (req, res) => {
     let date = new Date();
     let topic = req.body.topic;
 
     console.log(req.body.topic + ' was entered as a parameter. ' + date + '\n');
     output.write(JSON.stringify(req.body) + ' was entered as a parameter. ' + date + '\n');
-    //res.json(req.body);
 
     switch(topic) {
         case 'topic1':

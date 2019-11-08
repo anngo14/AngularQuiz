@@ -1,0 +1,11 @@
+{
+  "name": "quiz-manager",
+  "version": "1.0.0",
+  "description": "serves the angular application through nodejs and express",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

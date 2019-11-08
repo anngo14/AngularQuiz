@@ -18,16 +18,20 @@ fs.stat('logs/serverlog.txt', function (err, stats) {
     var fileSize = stats.size;
     console.log(fileSize + ' bytes');
     //If file size exceeds 1 MB, move the contents to a backup log
-    if(fileSize > 1000000) {
-        async function createBackup() {
-            await copyFile('logs/serverlog.txt', 'logs/backup/serverlog-backup.txt'),
-                //Cleaning the contents of serverlog
-                fs.writeFile('logs/serverlog.txt', '', function() {
-                    console.log('Cleanup done.');
-                });
-                console.log("Backup created successfully!");
-        }
-        createBackup().catch(error => console.error(error));
+    if(fileSize > 2) {
+        //Streams for src and dst log files
+        let src = fs.createReadStream('logs/serverlog.txt');
+        let dst = fs.createWriteStream('logs/backup/serverlog-backup.txt', {'flags':'a'});
+        //Backup data in apilog.txt to apilog-backup.txt
+        let date = new Date();
+        output.write('Data Backed up...' + date + '\n');
+        src.pipe(dst);   
+
+        //Clean up of original src log file     
+        dst.on("close", () => {
+            let clean = fs.createWriteStream('logs/serverlog.txt');
+            clean.write('');
+        });
     }
 });
 
