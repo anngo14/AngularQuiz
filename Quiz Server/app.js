@@ -3,20 +3,16 @@ var http = require('http');
 var path = require('path');
 var fs = require('fs');
 
-const { promisify } = require('util');
-
-const copyFile = promisify(fs.copyFile);
-
 //Write Stream
 var output = fs.createWriteStream('logs/serverlog.txt', {'flags': 'a'});
 
 //File Stats
 fs.stat('logs/serverlog.txt', function (err, stats) {
     if (err) throw err;
-    //console.log('stats: ' + JSON.stringify(stats));
     //Get the file size
     var fileSize = stats.size;
     console.log(fileSize + ' bytes');
+    output.write('Size of serverlog.txt is ' + fileSize + ' bytes\n');
     //If file size exceeds 1 MB, move the contents to a backup log
     if(fileSize > 1000000) {
         //Streams for src and dst log files

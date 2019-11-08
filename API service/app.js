@@ -15,10 +15,10 @@ var output = fs.createWriteStream('logs/apilog.txt', {'flags': 'a'});
 //File Stats	
 fs.stat('logs/apilog.txt', function (err, stats) {	
     if (err) throw err;	
-    //console.log('stats: ' + JSON.stringify(stats));	
     //Get the file size	
     var fileSize = stats.size;	
     console.log(fileSize + ' bytes');	
+    output.write('Size of apilog.txt is ' + fileSize + ' bytes\n');
     //If file size exceeds 1 MB, move the contents to a backup log	
     if(fileSize > 1000000) {	   
         //Streams for src and dst log files
@@ -93,9 +93,11 @@ app.post('/api/topic', (req, res) => {
     //Logs according to incoming parameter
     if(topic != 'topic1' || topic != 'topic2' || topic != 'topic3' || topic != 'topic4' || topic != 'topic5' || topic != 'topic6'){
         output.write(topic + ' was requested from the user...This is an invalid request. ' + date + '\n');
+        console.log(topic + ' was requested from the user...This is an invalid request. ' + date + '\n');
 
     } else {
         output.write(topic + ' was requested from the user...' + date + '\n');
+        console.log(topic + ' was requested from the user...' + date + '\n');
     }
 });
 
@@ -105,16 +107,16 @@ app.route('/api/score')
     let date = new Date();
     const scoreOutput = fs.createWriteStream('API service/scores.json');
     
-    if(req.body.correct === undefined || req.body.incorrect === undefined){
+    if(req.body.correct === undefined || req.body.incorrect === undefined || typeof(req.body.correct) != "number" || typeof(req.body.incorrect) != "number"){
         console.log("error");
         output.write('ERROR: ' + JSON.stringify(req.body) + ' is not the correct format for this post request...' + date + '\n');
-        res.send(400, 'Incorrect JSON parameter');
+        res.status(400).send('Incorrect JSON parameter');
         return;
     }
 
     scoreOutput.write(JSON.stringify(req.body));
     output.write(JSON.stringify(req.body) + ' was passed as a parameter...' + date);
-    res.send(201, req.body);
+    res.status(201).send(req.body);
 });
 
 //Starts server on PORT
