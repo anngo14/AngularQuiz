@@ -8,8 +8,7 @@ import { topicName } from '../models/topicName';
 })
 export class TopicService {
 
-  url: string = 'http://localhost:5000/api/topics/';
-  posturl: string = 'http://localhost:5000/api/topic';
+  url: string = 'http://localhost:5000/api/topic';
   constructor(private http: HttpClient) { }
 
   httpOptions = {
@@ -21,6 +20,6 @@ export class TopicService {
     var topicJSON:topicName = {
       topic: topic
     }
-    return this.http.post<topic[]>(this.posturl, topicJSON, this.httpOptions);
+    return this.http.post<topic[]>(this.url, topicJSON, this.httpOptions);
   }
 }
