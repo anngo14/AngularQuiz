@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { DataService } from '../services/data.service';
 import { Router } from '@angular/router';
+import { ScoreService } from '../services/score.service';
+import { score } from '../models/score';
 
 @Component({
   selector: 'app-result',
@@ -11,7 +13,7 @@ export class ResultComponent implements OnInit {
 
   correct: number;
   incorrect: number;
-  constructor(private data: DataService, private r:Router) { }
+  constructor(private data: DataService, private r:Router, private score: ScoreService) { }
 
   ngOnInit() {
     this.data.userName.subscribe(data => {
@@ -20,8 +22,12 @@ export class ResultComponent implements OnInit {
         this.r.navigate(['/error']);
       }
     });
-    this.data.correctAnwers.subscribe(data => this.correct = data);
-    this.data.incorrectAnswers.subscribe(data => this.incorrect = data);
+    this.data.correct.subscribe(data => {
+      this.correct = data;
+    });
+    this.data.incorrect.subscribe(data => {
+      this.incorrect = data;
+    });
   }
   backToHome(){
     this.r.navigate(['/home']);

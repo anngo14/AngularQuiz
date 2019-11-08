@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
 import { topic } from '../models/topic';
+import { score } from '../models/score';
 
 @Injectable({
   providedIn: 'root'
@@ -17,11 +18,11 @@ export class DataService {
 
   //correct observable
   private defaultCorrect = new BehaviorSubject(0);
-  correctAnwers = this.defaultCorrect.asObservable();
+  correct = this.defaultCorrect.asObservable();
 
   //incorrect observable
   private defaultIncorrect = new BehaviorSubject(0);
-  incorrectAnswers = this.defaultIncorrect.asObservable();
+  incorrect = this.defaultIncorrect.asObservable();
 
   constructor() { }
 
@@ -31,10 +32,8 @@ export class DataService {
   changeTopic(topic: string) {
     this.defaultTopic.next(topic);
   }
-  changeCorrect(correct: number){
-    this.defaultCorrect.next(correct);
-  }
-  changeIncorrect(incorrect: number){
-    this.defaultIncorrect.next(incorrect);
+  changeScore(newScore: score){
+    this.defaultCorrect.next(newScore.correct);
+    this.defaultIncorrect.next(newScore.incorrect);
   }
 }

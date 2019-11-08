@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { DataService } from '../services/data.service';
 import { TopicService } from '../services/topic.service';
 import { Router } from '@angular/router';
+import { ScoreService } from '../services/score.service';
+import { score } from '../models/score';
 
 @Component({
   selector: 'app-question',
@@ -18,7 +20,7 @@ export class QuestionComponent implements OnInit {
   correct:number = 0;
   incorrect:number = 0;
 
-  constructor(private data:DataService, private s: TopicService, private r: Router) { }
+  constructor(private data:DataService, private s: TopicService, private r: Router, private score: ScoreService) { }
 
   ngOnInit() {
     this.data.userName.subscribe(data => {
@@ -48,8 +50,13 @@ export class QuestionComponent implements OnInit {
         this.incorrect += 1;
       }
     }
-    this.data.changeCorrect(this.correct);
-    this.data.changeIncorrect(this.incorrect);
+    //Posts score json
+    this.score.postScore(this.correct, this.incorrect).subscribe();
+    let scoreObj:score = {
+      correct: this.correct,
+      incorrect: this.incorrect
+    };
+    this.data.changeScore(scoreObj);
     this.r.navigate(['/thankyou']);
   }
 
