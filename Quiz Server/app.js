@@ -78,6 +78,20 @@ app.post('/thankyou', (req, res) => {
     output.write(log);
     res.sendFile(angularEntry);
 });
+app.get('/result', (req, res) => {
+    let urlPath = req.url;
+    let date = new Date();
+    let log = 'Path changed to ' + urlPath + '. ' + date + '\n';
+    output.write(log);
+    res.sendFile(angularEntry);
+});
+app.get('/thankyou', (req, res) => {
+    let urlPath = req.url;
+    let date = new Date();
+    let log = 'Path changed to ' + urlPath + '. ' + date + '\n';
+    output.write(log);
+    res.sendFile(angularEntry);
+});
 app.get('/logout', (req, res) => {
     let urlPath = req.url;
     let date = new Date();
