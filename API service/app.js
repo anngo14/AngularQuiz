@@ -48,11 +48,35 @@ app.use(bodyparser.json());
 //Get Request for all users
 app.route('/api/users').get((req, res) => {
     let date = new Date();
-    var users = require('./users.json');
-    res.json(users);
+    let user = req.query.user;
+    let pass = req.query.pass;
+    let index = checkUser(user, pass);
+    if(index != -1){
+        res.json({'status': 'success'});
+        output.write('User successfully logged in. ' + date + '\n');
+    }
+    else{
+        res.json({'status': 'fail'});
+        output.write('User failed to log in. ' + date + '\n');
+    }
     output.write('Users JSON object was returned. ' + date + '\n');
 });
+function checkUser(user, pass){
+    var users = require('./users.json');
+    let userlist = users.users;
 
+    let index = -1;
+    for(let i = 0; i < userlist.length; i++){
+        console.log(userlist[i].username);
+        console.log(userlist[i].password);
+
+      if(userlist[i].username === user && userlist[i].password === pass){
+        index = i;
+        console.log(index);
+      }
+    }
+    return index;
+}
 //Post Request for topics taking a JSON object as a parameter
 app.post('/api/topic', (req, res) => {
     let date = new Date();

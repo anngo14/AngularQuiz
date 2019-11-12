@@ -8,10 +8,11 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class UserService {
-  url: string = 'http://localhost:5000/api/users';
+  url: string = 'http://localhost:5000/api/users?';
   constructor(private http: HttpClient) { }
 
-  getusers(): Observable<users>{
-    return this.http.get<users>(this.url);
+  getusers(user, pass): Observable<any>{
+    let newUrl = this.url.concat('user='+user+'&pass='+pass);
+    return this.http.get<any>(newUrl);
   }
 }
