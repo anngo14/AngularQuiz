@@ -121,15 +121,6 @@ app.post('/api/topic', (req, res) => {
             res.status(404).send("unknown topic");
             res.end();
     }
-    //Logs according to incoming parameter
-   
-    if(topic === "topic1" || topic === "topic2" || topic === "topic3" || topic === "topic4" || topic === "topic5" || topic === "topic6"){
-        output.write(topic + ' was requested from the user...' + date + '\n');
-        console.log(topic + ' was requested from the user...' + date + '\n');
-    }else{
-        output.write(topic + ' was requested from the user...This is an invalid request. ' + date + '\n');
-        console.log(topic + ' was requested from the user...This is an invalid request. ' + date + '\n');
-    }
 });
 
 //Post New Score JSON
