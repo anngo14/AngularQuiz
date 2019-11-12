@@ -50,3 +50,16 @@ Path changed to /login. Tue Nov 12 2019 11:33:47 GMT-0500 (Eastern Standard Time
 Server Running on Port 4500...Tue Nov 12 2019 11:35:21 GMT-0500 (Eastern Standard Time)
 Size of serverlog.txt is 3761 bytes
 Path changed to /login. Tue Nov 12 2019 11:35:24 GMT-0500 (Eastern Standard Time)
+Server Running on Port 4500...Tue Nov 12 2019 11:44:28 GMT-0500 (Eastern Standard Time)
+Size of serverlog.txt is 3967 bytes
+Path changed to /login. Tue Nov 12 2019 11:45:39 GMT-0500 (Eastern Standard Time)
+Path changed to /login. Tue Nov 12 2019 11:47:42 GMT-0500 (Eastern Standard Time)
+Server Running on Port 4500...Tue Nov 12 2019 12:20:09 GMT-0500 (Eastern Standard Time)
+Size of serverlog.txt is 4255 bytes
+Server Running on Port 4500...Tue Nov 12 2019 12:24:23 GMT-0500 (Eastern Standard Time)
+Size of serverlog.txt is 4379 bytes
+Server Running on Port 4500...Tue Nov 12 2019 12:30:24 GMT-0500 (Eastern Standard Time)
+Size of serverlog.txt is 4503 bytes
+Server Running on Port 4500...Tue Nov 12 2019 12:33:12 GMT-0500 (Eastern Standard Time)
+Size of serverlog.txt is 4627 bytes
+Path changed to /login. Tue Nov 12 2019 12:33:18 GMT-0500 (Eastern Standard Time)

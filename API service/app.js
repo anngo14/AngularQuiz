@@ -59,7 +59,7 @@ app.route('/api/users').get((req, res) => {
         res.json({'status': 'fail'});
         output.write('User failed to log in. ' + date + '\n');
     }
-    output.write('Users JSON object was returned. ' + date + '\n');
+    output.write('User get request. ' + date + '\n');
 });
 function checkUser(user, pass){
     var users = require('./users.json');
@@ -67,16 +67,25 @@ function checkUser(user, pass){
 
     let index = -1;
     for(let i = 0; i < userlist.length; i++){
-        console.log(userlist[i].username);
-        console.log(userlist[i].password);
-
       if(userlist[i].username === user && userlist[i].password === pass){
         index = i;
-        console.log(index);
       }
     }
     return index;
 }
+app.get('/api/available', (req, res) => {
+    let user = req.query.user;
+    let topic = req.query.topic;
+    let date = new Date();
+
+    if(topic === "topic1" || topic === "topic2" || topic === "topic3" || topic === "topic4" || topic === "topic5" || topic === "topic6"){
+        output.write(topic + ` was requested from ${user}...` + date + '\n');
+        res.json({'status': 'available'});
+    }else{
+        output.write(topic + ` was requested from ${user}...This is an invalid request. ` + date + '\n');
+        res.json({'status': 'not found'});
+    }
+});
 //Post Request for topics taking a JSON object as a parameter
 app.post('/api/topic', (req, res) => {
     let date = new Date();

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { DataService } from '../services/data.service';
 import { Router } from '@angular/router';
 import { TopicService } from '../services/topic.service';
@@ -9,27 +9,37 @@ import { TopicService } from '../services/topic.service';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
-export class HomeComponent implements OnInit {
+export class HomeComponent implements OnInit, OnDestroy {
+  
 
+  username:string;
   topic: string;
-  available: string[] = ["topic1", "topic2", "topic3", "topic4", "topic5", "topic6"];
+  subscription;
 
   constructor(private d:DataService, private r: Router, private t: TopicService) { }
 
   ngOnInit() {
     this.d.userName.subscribe(data => {
+      this.username = data;
       //if user is not logged on, they cannot access this page
       if(data === ''){
         this.r.navigate(['/error']);
       }
     });
   }
+  ngOnDestroy(): void {
+    if(this.subscription != undefined){
+      this.subscription.unsubscribe();
+    }
+
+  }
   chooseTopic(){
     this.d.changeTopic(this.topic);
-    if(this.available.includes(this.topic))
-    {
-      this.r.navigate(['/quiz']);
-    }
+    this.subscription = this.t.checkTopic(this.username, this.topic).subscribe(data => {
+      if(data.status === 'available'){
+        this.r.navigate(['/quiz']);
+      }
+    });
   }
 
 }
