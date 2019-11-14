@@ -11,8 +11,6 @@ import { score } from '../models/score';
   styleUrls: ['./question.component.css']
 })
 export class QuestionComponent implements OnInit, OnDestroy {
-  
-
   //ngModule for two way binding
   answerChoices:any = [];
   
@@ -25,15 +23,20 @@ export class QuestionComponent implements OnInit, OnDestroy {
   constructor(private data:DataService, private s: TopicService, private r: Router, private score: ScoreService) { }
 
   ngOnInit() {
-    this.data.userName.subscribe(data => {
+    this.subscription = this.data.userName.subscribe(user => {
       //if user is not logged on, they cannot access this page
-      if(data === ''){
+      if(user === ''){
         this.r.navigate(['/error']);
       }
-    });
-    this.subscription = this.data.topicSelected.subscribe(message => {
-      this.topic = message;
-      this.s.getQuestions(this.topic).subscribe(data => this.questionList = data);
+      this.data.topicSelected.subscribe(message => {
+        this.topic = message;
+        this.s.getQuestions(user, this.topic).subscribe(data => {
+          if(data.status === 'not found'){
+            this.r.navigate(['/notfound']);
+          }
+          this.questionList = data
+        });
+      })
     });
   }
   ngOnDestroy(): void {
@@ -41,8 +44,8 @@ export class QuestionComponent implements OnInit, OnDestroy {
   }
   submitQuiz(){
     //Edge case for submitting the quiz early
-    if(this.answerChoices.length < 5){
-      for(let i = this.answerChoices.length; i < 5; i++){
+    if(this.answerChoices.length < this.questionList.length){
+      for(let i = this.answerChoices.length; i < this.questionList.length; i++){
         this.answerChoices.push(0);
       }
     }
@@ -61,7 +64,6 @@ export class QuestionComponent implements OnInit, OnDestroy {
       correct: this.correct,
       incorrect: this.incorrect
     };
-    this.data.changeScore(scoreObj);
     this.r.navigate(['/thankyou']);
   }
 

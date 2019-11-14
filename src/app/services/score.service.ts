@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpHeaders, HttpClient } from '@angular/common/http';
+import { HttpHeaders, HttpClient, HttpParams } from '@angular/common/http';
 import { score } from '../models/score';
 
 @Injectable({
@@ -8,6 +8,7 @@ import { score } from '../models/score';
 export class ScoreService {
 
   url: string = 'http://localhost:5000/api/score';
+  completeUrl: string = 'http://localhost:4500/complete';
   constructor(private http: HttpClient) { }
 
   httpOptions = {
@@ -22,5 +23,11 @@ export class ScoreService {
       incorrect: i
     };
     return this.http.post<score>(this.url, scoreJSON, this.httpOptions);
+  }
+  completeQuiz(){
+    return this.http.post<any>(this.completeUrl, null);
+  }
+  getScore(){
+    return this.http.get<score>(this.url);
   }
 }

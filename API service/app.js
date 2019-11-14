@@ -45,93 +45,56 @@ app.use(cors(corsOptions));
 app.use(express.json());
 app.use(bodyparser.json());
 
-//Get Request for all users
-app.route('/api/users').get((req, res) => {
-    let date = new Date();
-    let user = req.query.user;
-    let pass = req.query.pass;
-    let index = checkUser(user, pass);
-    if(index != -1){
-        res.json({'status': 'success'});
-        output.write('User successfully logged in. ' + date + '\n');
-    }
-    else{
-        res.json({'status': 'fail'});
-        output.write('User failed to log in. ' + date + '\n');
-    }
-    output.write('User get request. ' + date + '\n');
-});
-function checkUser(user, pass){
-    var users = require('./users.json');
-    let userlist = users.users;
-
-    let index = -1;
-    for(let i = 0; i < userlist.length; i++){
-      if(userlist[i].username === user && userlist[i].password === pass){
-        index = i;
-      }
-    }
-    return index;
-}
-app.get('/api/available', (req, res) => {
-    let user = req.query.user;
-    let topic = req.query.topic;
-    let date = new Date();
-
-    if(topic === "topic1" || topic === "topic2" || topic === "topic3" || topic === "topic4" || topic === "topic5" || topic === "topic6"){
-        output.write(topic + ` was requested from ${user}...` + date + '\n');
-        res.json({'status': 'available'});
-    }else{
-        output.write(topic + ` was requested from ${user}...This is an invalid request. ` + date + '\n');
-        res.json({'status': 'not found'});
-    }
-});
 //Post Request for topics taking a JSON object as a parameter
 app.post('/api/topic', (req, res) => {
     let date = new Date();
     let topic = req.body.topic;
+
+    if(topic === undefined || typeof(topic) != "string"){
+        console.log("error");
+        output.write('ERROR: ' + JSON.stringify(req.body) + ' is not the correct format for this post request...' + date + '\n');
+        res.status(400).send('Incorrect JSON parameter');
+        return;
+    }
     output.write(JSON.stringify(req.body) + ' was entered as a parameter. ' + date + '\n');
 
     switch(topic) {
         case 'topic1':
+            output.write('topic1 json object was sent to the user...' + date + '\n');
             var topic1 = require('./topic1.json');
             res.json(topic1);
             break;
         case 'topic2':
+            output.write('topic2 json object was sent to the user...' + date + '\n');
             var topic2 = require('./topic2.json');
             res.json(topic2);
             break;
         case 'topic3':
+            output.write('topic3 json object was sent to the user...' + date + '\n');
             var topic3 = require('./topic3.json');
             res.json(topic3);
             break;
         case 'topic4':
+            output.write('topic4 json object was sent to the user...' + date + '\n');
             var topic4 = require('./topic4.json');
             res.json(topic4);
             break;
         case 'topic5':
+            output.write('topic5 json object was sent to the user...' + date + '\n');
             var topic5 = require('./topic5.json');
             res.json(topic5);
             break;
         case 'topic6':
+            output.write('topic6 json object was sent to the user...' + date + '\n');
             var topic6 = require('./topic6.json');
             res.json(topic6);
             break;    
         default:
+            output.write('no json object was sent to the user...' + date + '\n');
             res.status(404).send("unknown topic");
             res.end();
     }
-    //Logs according to incoming parameter
-   
-    if(topic === "topic1" || topic === "topic2" || topic === "topic3" || topic === "topic4" || topic === "topic5" || topic === "topic6"){
-        output.write(topic + ' was requested from the user...' + date + '\n');
-        console.log(topic + ' was requested from the user...' + date + '\n');
-    }else{
-        output.write(topic + ' was requested from the user...This is an invalid request. ' + date + '\n');
-        console.log(topic + ' was requested from the user...This is an invalid request. ' + date + '\n');
-    }
 });
-
 //Post New Score JSON
 app.route('/api/score')
  .post((req, res) => {
@@ -146,8 +109,15 @@ app.route('/api/score')
     }
 
     scoreOutput.write(JSON.stringify(req.body));
-    output.write(JSON.stringify(req.body) + ' was passed as a parameter...' + date);
+    output.write(JSON.stringify(req.body) + ' was passed as a parameter...' + date + '\n');
+    output.write(JSON.stringify(req.body) + ' was saved to scores.json...' + date + '\n');
     res.status(201).send(req.body);
+})
+.get((req,res) => {
+    let date = new Date();
+    const scoreJSON = require('./scores.json');
+    output.write('Score JSON object was returned...' + date);
+    res.json(scoreJSON);
 });
 
 //Starts server on PORT

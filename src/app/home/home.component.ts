@@ -3,19 +3,16 @@ import { DataService } from '../services/data.service';
 import { Router } from '@angular/router';
 import { TopicService } from '../services/topic.service';
 
-
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit, OnDestroy {
-  
-
   username:string;
   topic: string;
   subscription;
-
+  availableTopics:string[] = ['topic1', 'topic2', 'topic3', 'topic4', 'topic5', 'topic6'];
   constructor(private d:DataService, private r: Router, private t: TopicService) { }
 
   ngOnInit() {
@@ -31,15 +28,12 @@ export class HomeComponent implements OnInit, OnDestroy {
     if(this.subscription != undefined){
       this.subscription.unsubscribe();
     }
-
   }
   chooseTopic(){
-    this.d.changeTopic(this.topic);
-    this.subscription = this.t.checkTopic(this.username, this.topic).subscribe(data => {
-      if(data.status === 'available'){
-        this.r.navigate(['/quiz']);
-      }
-    });
+    if(this.availableTopics.includes(this.topic)){
+      this.d.changeTopic(this.topic);
+      this.r.navigate(['/quiz']);
+    }
   }
 
 }

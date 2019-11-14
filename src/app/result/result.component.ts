@@ -22,11 +22,9 @@ export class ResultComponent implements OnInit {
         this.r.navigate(['/error']);
       }
     });
-    this.data.correct.subscribe(data => {
-      this.correct = data;
-    });
-    this.data.incorrect.subscribe(data => {
-      this.incorrect = data;
+    this.score.getScore().subscribe(data => {
+      this.correct = data.correct;
+      this.incorrect = data.incorrect;
     });
   }
   backToHome(){
