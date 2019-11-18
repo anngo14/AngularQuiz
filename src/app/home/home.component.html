@@ -7,10 +7,10 @@
     <mat-grid-tile colspan="3">
     <div class="topicField">
         <h2>Topics</h2>
-        <form #topicForm="ngForm" (ngSubmit)="chooseTopic()">
+        <form #topicForm="ngForm" (ngSubmit)="chooseTopic()" [@failedTopicAnimation]="error">
         <mat-form-field>
             <mat-select placeholder="Select a Topic" [(value)]="topic" name="selectedTopic" #selectedTopic="ngModel" ngModel required>
-                <mat-option >--Select a Topic--</mat-option>
+                <mat-option value="topic-1">--Select a Topic--</mat-option>
                 <mat-option value="topic6">Animal Kingdom</mat-option>
                 <mat-option value="topic1">Science</mat-option>
                 <mat-option value="topic2">Music</mat-option>

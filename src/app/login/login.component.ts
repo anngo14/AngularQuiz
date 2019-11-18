@@ -1,14 +1,30 @@
 import { Component, OnInit} from '@angular/core';
 import {FormControl, Validators} from '@angular/forms';
 import { UserService } from '../services/user.service';
-import { user } from '../models/user';
 import { Router } from '@angular/router';
 import { DataService } from '../services/data.service';
+import { transition, trigger, query, style, animate, state, keyframes } from '@angular/animations';
 
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
-  styleUrls: ['./login.component.css']
+  styleUrls: ['./login.component.css'],
+  animations: [
+    trigger('failedLoginAnimation', [
+      state('true', style({})),
+      state('false', style({})),
+      transition('* => true', animate("250ms", keyframes([
+        style({transform: 'translateX(5%)'}),
+        style({transform: 'translateX(0%)'}),
+        style({transform: 'translateX(-5%)'}),
+        style({transform: 'translateX(0%)'}),
+        style({transform: 'translateX(5%)'}),
+        style({transform: 'translateX(0%)'}),
+        style({transform: 'translateX(-5%)'}),
+        style({transform: 'translateX(0%)'})
+      ]))),
+    ])
+  ]
 })
 export class LoginComponent implements OnInit {
   userInput = '';
@@ -36,6 +52,7 @@ export class LoginComponent implements OnInit {
       else{
         //error message
         this.error = true;
+        setTimeout(() => {this.error = false}, 2500);
       }
     });
   }

@@ -1,10 +1,11 @@
 <form (ngSubmit)="submitQuiz()">
+<div class="questionDiv" [@questionAnimation]="questionList">
 <div *ngFor="let questions of questionList">
-    <mat-grid-list cols="5" rowHeight="75px">
+    <mat-grid-list cols="5" rowHeight="50px" >
         <mat-grid-tile colspan="3" rows=":.5"><label id="questionLabel">{{questions.question}}</label></mat-grid-tile>
         <mat-grid-tile colspan="2" rows=":.5"></mat-grid-tile>
     </mat-grid-list>
-    <mat-grid-list cols="5" rowHeight="1:1">
+    <mat-grid-list cols="5" rowHeight="250px">
             <mat-grid-tile colspan="3">
             <div class="questionField">
                 <mat-radio-group
@@ -21,6 +22,7 @@
         <mat-grid-tile colspan="2"></mat-grid-tile>
     </mat-grid-list>
     <mat-divider></mat-divider>
+</div>
 </div>
 <!-- Bottom Submit Button-->
 <mat-grid-list cols="5" rowHeight="100px">

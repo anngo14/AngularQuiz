@@ -4,11 +4,21 @@ import { TopicService } from '../services/topic.service';
 import { Router } from '@angular/router';
 import { ScoreService } from '../services/score.service';
 import { score } from '../models/score';
+import { transition, trigger, query, style, stagger, animate } from '@angular/animations';
+import { topic } from '../models/topic';
 
 @Component({
   selector: 'app-question',
   templateUrl: './question.component.html',
-  styleUrls: ['./question.component.css']
+  styleUrls: ['./question.component.css'],
+  animations: [
+    trigger('questionAnimation', [
+      transition('* => *', [
+        query(':self', style({ transform: 'translateX(-100%)' })),
+        query(':self', animate('400ms', style({ transform: 'translateX(0)' })))
+      ])
+  ])
+]
 })
 export class QuestionComponent implements OnInit, OnDestroy {
   //ngModule for two way binding
@@ -16,7 +26,7 @@ export class QuestionComponent implements OnInit, OnDestroy {
   
   subscription;
   topic: string;
-  questionList;
+  questionList:Array<topic>;
   correct:number = 0;
   incorrect:number = 0;
 
@@ -33,8 +43,9 @@ export class QuestionComponent implements OnInit, OnDestroy {
         this.s.getQuestions(user, this.topic).subscribe(data => {
           if(data.status === 'not found'){
             this.r.navigate(['/notfound']);
+          }else{
+            this.questionList = data;
           }
-          this.questionList = data
         });
       })
     });

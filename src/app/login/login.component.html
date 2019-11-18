@@ -1,7 +1,7 @@
 <mat-grid-list cols="4" rowHeight="1:2">
     <mat-grid-tile></mat-grid-tile>
     <mat-grid-tile colspan="2">
-    <div class="loginField" >
+    <div class="loginField" [@failedLoginAnimation]="error">
         <h2>Login</h2>
         <mat-error *ngIf="error">Invalid Username or Password</mat-error>
         <form (ngSubmit)="redirectToHome()">

@@ -848,4 +848,317 @@ topic1 json object was sent to the user...Thu Nov 14 2019 10:26:24 GMT-0500 (Eas
 {"correct":0,"incorrect":5} was saved to scores.json...Thu Nov 14 2019 10:26:26 GMT-0500 (Eastern Standard Time)
 Server Running on Port 5000...Thu Nov 14 2019 10:26:27 GMT-0500 (Eastern Standard Time)
 Size of apilog.txt is 87047 bytes
-Score JSON object was returned...Thu Nov 14 2019 10:27:50 GMT-0500 (Eastern Standard Time)
+Score JSON object was returned...Thu Nov 14 2019 10:27:50 GMT-0500 (Eastern Standard Time)Server Running on Port 5000...Mon Nov 18 2019 09:56:44 GMT-0500 (Eastern Standard Time)
+Size of apilog.txt is 87636 bytes
+{"topic":"topic6"} was entered as a parameter. Mon Nov 18 2019 09:57:04 GMT-0500 (Eastern Standard Time)
+topic6 json object was sent to the user...Mon Nov 18 2019 09:57:04 GMT-0500 (Eastern Standard Time)
+{"topic":"topic6"} was entered as a parameter. Mon Nov 18 2019 10:00:14 GMT-0500 (Eastern Standard Time)
+topic6 json object was sent to the user...Mon Nov 18 2019 10:00:14 GMT-0500 (Eastern Standard Time)
+{"topic":"topic6"} was entered as a parameter. Mon Nov 18 2019 10:00:14 GMT-0500 (Eastern Standard Time)
+topic6 json object was sent to the user...Mon Nov 18 2019 10:00:14 GMT-0500 (Eastern Standard Time)
+Server Running on Port 5000...Mon Nov 18 2019 10:01:11 GMT-0500 (Eastern Standard Time)
+Size of apilog.txt is 88373 bytes
+Server Running on Port 5000...Mon Nov 18 2019 10:03:38 GMT-0500 (Eastern Standard Time)
+Size of apilog.txt is 88495 bytes
+Server Running on Port 5000...Mon Nov 18 2019 10:04:16 GMT-0500 (Eastern Standard Time)
+Size of apilog.txt is 88617 bytes
+Server Running on Port 5000...Mon Nov 18 2019 10:04:55 GMT-0500 (Eastern Standard Time)
+Size of apilog.txt is 88739 bytes
+Server Running on Port 5000...Mon Nov 18 2019 10:04:56 GMT-0500 (Eastern Standard Time)
+Size of apilog.txt is 88861 bytes
+Server Running on Port 5000...Mon Nov 18 2019 10:04:59 GMT-0500 (Eastern Standard Time)
+Size of apilog.txt is 88983 bytes
+{"topic":"topic6"} was entered as a parameter. Mon Nov 18 2019 10:05:20 GMT-0500 (Eastern Standard Time)
+topic6 json object was sent to the user...Mon Nov 18 2019 10:05:20 GMT-0500 (Eastern Standard Time)
+Server Running on Port 5000...Mon Nov 18 2019 10:06:48 GMT-0500 (Eastern Standard Time)
+Size of apilog.txt is 89310 bytes
+Server Running on Port 5000...Mon Nov 18 2019 10:06:51 GMT-0500 (Eastern Standard Time)
+Size of apilog.txt is 89432 bytes
+{"topic":"topic1"} was entered as a parameter. Mon Nov 18 2019 10:07:37 GMT-0500 (Eastern Standard Time)
+topic1 json object was sent to the user...Mon Nov 18 2019 10:07:37 GMT-0500 (Eastern Standard Time)
+{"topic":"topic1"} was entered as a parameter. Mon Nov 18 2019 10:07:37 GMT-0500 (Eastern Standard Time)
+topic1 json object was sent to the user...Mon Nov 18 2019 10:07:37 GMT-0500 (Eastern Standard Time)
+Server Running on Port 5000...Mon Nov 18 2019 10:09:36 GMT-0500 (Eastern Standard Time)
+Size of apilog.txt is 89964 bytes
+Server Running on Port 5000...Mon Nov 18 2019 10:09:37 GMT-0500 (Eastern Standard Time)
+Size of apilog.txt is 90086 bytes
+Server Running on Port 5000...Mon Nov 18 2019 10:09:41 GMT-0500 (Eastern Standard Time)
+Size of apilog.txt is 90208 bytes
+{"topic":"topic6"} was entered as a parameter. Mon Nov 18 2019 10:10:23 GMT-0500 (Eastern Standard Time)
+topic6 json object was sent to the user...Mon Nov 18 2019 10:10:23 GMT-0500 (Eastern Standard Time)
+Server Running on Port 5000...Mon Nov 18 2019 10:11:33 GMT-0500 (Eastern Standard Time)
+Size of apilog.txt is 90535 bytes
+Server Running on Port 5000...Mon Nov 18 2019 10:11:36 GMT-0500 (Eastern Standard Time)
+Size of apilog.txt is 90657 bytes
+{"topic":"topic6"} was entered as a parameter. Mon Nov 18 2019 10:12:14 GMT-0500 (Eastern Standard Time)
+topic6 json object was sent to the user...Mon Nov 18 2019 10:12:14 GMT-0500 (Eastern Standard Time)
+Server Running on Port 5000...Mon Nov 18 2019 10:14:25 GMT-0500 (Eastern Standard Time)
+Size of apilog.txt is 90984 bytes
+Server Running on Port 5000...Mon Nov 18 2019 10:14:26 GMT-0500 (Eastern Standard Time)
+Size of apilog.txt is 91106 bytes
+Server Running on Port 5000...Mon Nov 18 2019 10:14:29 GMT-0500 (Eastern Standard Time)
+Size of apilog.txt is 91228 bytes
+{"topic":"topic6"} was entered as a parameter. Mon Nov 18 2019 10:15:09 GMT-0500 (Eastern Standard Time)
+topic6 json object was sent to the user...Mon Nov 18 2019 10:15:09 GMT-0500 (Eastern Standard Time)
+{"topic":"topic6"} was entered as a parameter. Mon Nov 18 2019 10:16:48 GMT-0500 (Eastern Standard Time)
+topic6 json object was sent to the user...Mon Nov 18 2019 10:16:48 GMT-0500 (Eastern Standard Time)
+{"correct":0,"incorrect":10} was passed as a parameter...Mon Nov 18 2019 10:16:57 GMT-0500 (Eastern Standard Time)
+{"correct":0,"incorrect":10} was saved to scores.json...Mon Nov 18 2019 10:16:57 GMT-0500 (Eastern Standard Time)
+Server Running on Port 5000...Mon Nov 18 2019 10:16:58 GMT-0500 (Eastern Standard Time)
+Size of apilog.txt is 91989 bytes
+Score JSON object was returned...Mon Nov 18 2019 10:16:58 GMT-0500 (Eastern Standard Time)Server Running on Port 5000...Mon Nov 18 2019 10:37:03 GMT-0500 (Eastern Standard Time)
+Size of apilog.txt is 92201 bytes
+Server Running on Port 5000...Mon Nov 18 2019 10:37:04 GMT-0500 (Eastern Standard Time)
+Size of apilog.txt is 92323 bytes
+Server Running on Port 5000...Mon Nov 18 2019 10:37:07 GMT-0500 (Eastern Standard Time)
+Size of apilog.txt is 92445 bytes
+{"topic":"topic6"} was entered as a parameter. Mon Nov 18 2019 10:37:25 GMT-0500 (Eastern Standard Time)
+topic6 json object was sent to the user...Mon Nov 18 2019 10:37:25 GMT-0500 (Eastern Standard Time)
+Server Running on Port 5000...Mon Nov 18 2019 10:39:06 GMT-0500 (Eastern Standard Time)
+Size of apilog.txt is 92772 bytes
+Server Running on Port 5000...Mon Nov 18 2019 10:39:08 GMT-0500 (Eastern Standard Time)
+Size of apilog.txt is 92894 bytes
+{"topic":"topic1"} was entered as a parameter. Mon Nov 18 2019 10:39:32 GMT-0500 (Eastern Standard Time)
+topic1 json object was sent to the user...Mon Nov 18 2019 10:39:32 GMT-0500 (Eastern Standard Time)
+Server Running on Port 5000...Mon Nov 18 2019 10:41:13 GMT-0500 (Eastern Standard Time)
+Size of apilog.txt is 93221 bytes
+Server Running on Port 5000...Mon Nov 18 2019 10:41:16 GMT-0500 (Eastern Standard Time)
+Size of apilog.txt is 93343 bytes
+{"topic":"topic6"} was entered as a parameter. Mon Nov 18 2019 10:41:43 GMT-0500 (Eastern Standard Time)
+topic6 json object was sent to the user...Mon Nov 18 2019 10:41:43 GMT-0500 (Eastern Standard Time)
+Server Running on Port 5000...Mon Nov 18 2019 10:43:45 GMT-0500 (Eastern Standard Time)
+Size of apilog.txt is 93670 bytes
+Server Running on Port 5000...Mon Nov 18 2019 10:43:46 GMT-0500 (Eastern Standard Time)
+Size of apilog.txt is 93792 bytes
+Server Running on Port 5000...Mon Nov 18 2019 10:43:49 GMT-0500 (Eastern Standard Time)
+Size of apilog.txt is 93914 bytes
+{"topic":"topic6"} was entered as a parameter. Mon Nov 18 2019 10:44:18 GMT-0500 (Eastern Standard Time)
+topic6 json object was sent to the user...Mon Nov 18 2019 10:44:18 GMT-0500 (Eastern Standard Time)
+Server Running on Port 5000...Mon Nov 18 2019 10:46:06 GMT-0500 (Eastern Standard Time)
+Size of apilog.txt is 94241 bytes
+Server Running on Port 5000...Mon Nov 18 2019 10:46:08 GMT-0500 (Eastern Standard Time)
+Size of apilog.txt is 94363 bytes
+Server Running on Port 5000...Mon Nov 18 2019 10:46:10 GMT-0500 (Eastern Standard Time)
+Size of apilog.txt is 94485 bytes
+Server Running on Port 5000...Mon Nov 18 2019 10:49:14 GMT-0500 (Eastern Standard Time)
+Size of apilog.txt is 94607 bytes
+Server Running on Port 5000...Mon Nov 18 2019 10:49:15 GMT-0500 (Eastern Standard Time)
+Size of apilog.txt is 94729 bytes
+Server Running on Port 5000...Mon Nov 18 2019 10:49:18 GMT-0500 (Eastern Standard Time)
+Size of apilog.txt is 94851 bytes
+{"topic":"topic6"} was entered as a parameter. Mon Nov 18 2019 10:49:35 GMT-0500 (Eastern Standard Time)
+topic6 json object was sent to the user...Mon Nov 18 2019 10:49:35 GMT-0500 (Eastern Standard Time)
+{"topic":"topic6"} was entered as a parameter. Mon Nov 18 2019 10:49:50 GMT-0500 (Eastern Standard Time)
+topic6 json object was sent to the user...Mon Nov 18 2019 10:49:50 GMT-0500 (Eastern Standard Time)
+{"topic":"topic6"} was entered as a parameter. Mon Nov 18 2019 10:49:50 GMT-0500 (Eastern Standard Time)
+topic6 json object was sent to the user...Mon Nov 18 2019 10:49:50 GMT-0500 (Eastern Standard Time)
+Server Running on Port 5000...Mon Nov 18 2019 10:51:53 GMT-0500 (Eastern Standard Time)
+Size of apilog.txt is 95588 bytes
+Server Running on Port 5000...Mon Nov 18 2019 10:51:54 GMT-0500 (Eastern Standard Time)
+Size of apilog.txt is 95710 bytes
+{"topic":"topic6"} was entered as a parameter. Mon Nov 18 2019 10:52:12 GMT-0500 (Eastern Standard Time)
+topic6 json object was sent to the user...Mon Nov 18 2019 10:52:12 GMT-0500 (Eastern Standard Time)
+Server Running on Port 5000...Mon Nov 18 2019 10:53:21 GMT-0500 (Eastern Standard Time)
+Size of apilog.txt is 96037 bytes
+Server Running on Port 5000...Mon Nov 18 2019 10:53:23 GMT-0500 (Eastern Standard Time)
+Size of apilog.txt is 96159 bytes
+Server Running on Port 5000...Mon Nov 18 2019 10:53:25 GMT-0500 (Eastern Standard Time)
+Size of apilog.txt is 96281 bytes
+{"topic":"topic6"} was entered as a parameter. Mon Nov 18 2019 10:53:41 GMT-0500 (Eastern Standard Time)
+topic6 json object was sent to the user...Mon Nov 18 2019 10:53:41 GMT-0500 (Eastern Standard Time)
+{"topic":"topic1"} was entered as a parameter. Mon Nov 18 2019 10:53:58 GMT-0500 (Eastern Standard Time)
+topic1 json object was sent to the user...Mon Nov 18 2019 10:53:58 GMT-0500 (Eastern Standard Time)
+{"topic":"topic1"} was entered as a parameter. Mon Nov 18 2019 10:53:58 GMT-0500 (Eastern Standard Time)
+topic1 json object was sent to the user...Mon Nov 18 2019 10:53:58 GMT-0500 (Eastern Standard Time)
+{"topic":"topic6"} was entered as a parameter. Mon Nov 18 2019 10:54:11 GMT-0500 (Eastern Standard Time)
+topic6 json object was sent to the user...Mon Nov 18 2019 10:54:11 GMT-0500 (Eastern Standard Time)
+{"topic":"topic6"} was entered as a parameter. Mon Nov 18 2019 10:54:11 GMT-0500 (Eastern Standard Time)
+topic6 json object was sent to the user...Mon Nov 18 2019 10:54:11 GMT-0500 (Eastern Standard Time)
+{"topic":"topic6"} was entered as a parameter. Mon Nov 18 2019 10:54:11 GMT-0500 (Eastern Standard Time)
+topic6 json object was sent to the user...Mon Nov 18 2019 10:54:11 GMT-0500 (Eastern Standard Time)
+Server Running on Port 5000...Mon Nov 18 2019 10:55:53 GMT-0500 (Eastern Standard Time)
+Size of apilog.txt is 97633 bytes
+Server Running on Port 5000...Mon Nov 18 2019 10:55:54 GMT-0500 (Eastern Standard Time)
+Size of apilog.txt is 97755 bytes
+Server Running on Port 5000...Mon Nov 18 2019 10:55:57 GMT-0500 (Eastern Standard Time)
+Size of apilog.txt is 97877 bytes
+{"topic":"topic6"} was entered as a parameter. Mon Nov 18 2019 10:56:15 GMT-0500 (Eastern Standard Time)
+topic6 json object was sent to the user...Mon Nov 18 2019 10:56:15 GMT-0500 (Eastern Standard Time)
+{"topic":"topic6"} was entered as a parameter. Mon Nov 18 2019 10:56:25 GMT-0500 (Eastern Standard Time)
+topic6 json object was sent to the user...Mon Nov 18 2019 10:56:25 GMT-0500 (Eastern Standard Time)
+{"topic":"topic6"} was entered as a parameter. Mon Nov 18 2019 10:56:26 GMT-0500 (Eastern Standard Time)
+topic6 json object was sent to the user...Mon Nov 18 2019 10:56:26 GMT-0500 (Eastern Standard Time)
+Server Running on Port 5000...Mon Nov 18 2019 10:57:48 GMT-0500 (Eastern Standard Time)
+Size of apilog.txt is 98614 bytes
+Server Running on Port 5000...Mon Nov 18 2019 10:57:50 GMT-0500 (Eastern Standard Time)
+Size of apilog.txt is 98736 bytes
+{"topic":"topic6"} was entered as a parameter. Mon Nov 18 2019 10:58:16 GMT-0500 (Eastern Standard Time)
+topic6 json object was sent to the user...Mon Nov 18 2019 10:58:16 GMT-0500 (Eastern Standard Time)
+Server Running on Port 5000...Mon Nov 18 2019 11:00:24 GMT-0500 (Eastern Standard Time)
+Size of apilog.txt is 99063 bytes
+{"topic":"topic6"} was entered as a parameter. Mon Nov 18 2019 11:00:54 GMT-0500 (Eastern Standard Time)
+topic6 json object was sent to the user...Mon Nov 18 2019 11:00:54 GMT-0500 (Eastern Standard Time)
+Server Running on Port 5000...Mon Nov 18 2019 11:02:42 GMT-0500 (Eastern Standard Time)
+Size of apilog.txt is 99390 bytes
+Server Running on Port 5000...Mon Nov 18 2019 11:02:43 GMT-0500 (Eastern Standard Time)
+Size of apilog.txt is 99512 bytes
+Server Running on Port 5000...Mon Nov 18 2019 11:02:46 GMT-0500 (Eastern Standard Time)
+Size of apilog.txt is 99634 bytes
+Server Running on Port 5000...Mon Nov 18 2019 11:06:42 GMT-0500 (Eastern Standard Time)
+Size of apilog.txt is 99756 bytes
+Server Running on Port 5000...Mon Nov 18 2019 11:06:45 GMT-0500 (Eastern Standard Time)
+Size of apilog.txt is 99878 bytes
+{"topic":"topic6"} was entered as a parameter. Mon Nov 18 2019 11:07:02 GMT-0500 (Eastern Standard Time)
+topic6 json object was sent to the user...Mon Nov 18 2019 11:07:02 GMT-0500 (Eastern Standard Time)
+Server Running on Port 5000...Mon Nov 18 2019 11:07:47 GMT-0500 (Eastern Standard Time)
+Size of apilog.txt is 100205 bytes
+Server Running on Port 5000...Mon Nov 18 2019 11:07:48 GMT-0500 (Eastern Standard Time)
+Size of apilog.txt is 100328 bytes
+Server Running on Port 5000...Mon Nov 18 2019 11:07:50 GMT-0500 (Eastern Standard Time)
+Size of apilog.txt is 100451 bytes
+{"topic":"topic6"} was entered as a parameter. Mon Nov 18 2019 11:08:05 GMT-0500 (Eastern Standard Time)
+topic6 json object was sent to the user...Mon Nov 18 2019 11:08:05 GMT-0500 (Eastern Standard Time)
+{"correct":0,"incorrect":10} was passed as a parameter...Mon Nov 18 2019 11:08:12 GMT-0500 (Eastern Standard Time)
+{"correct":0,"incorrect":10} was saved to scores.json...Mon Nov 18 2019 11:08:12 GMT-0500 (Eastern Standard Time)
+Server Running on Port 5000...Mon Nov 18 2019 11:08:13 GMT-0500 (Eastern Standard Time)
+Size of apilog.txt is 101008 bytes
+Score JSON object was returned...Mon Nov 18 2019 11:08:14 GMT-0500 (Eastern Standard Time){"topic":"topic6"} was entered as a parameter. Mon Nov 18 2019 11:08:16 GMT-0500 (Eastern Standard Time)
+topic6 json object was sent to the user...Mon Nov 18 2019 11:08:16 GMT-0500 (Eastern Standard Time)
+{"topic":"topic2"} was entered as a parameter. Mon Nov 18 2019 11:08:30 GMT-0500 (Eastern Standard Time)
+topic2 json object was sent to the user...Mon Nov 18 2019 11:08:30 GMT-0500 (Eastern Standard Time)
+{"topic":"topic2"} was entered as a parameter. Mon Nov 18 2019 11:08:30 GMT-0500 (Eastern Standard Time)
+topic2 json object was sent to the user...Mon Nov 18 2019 11:08:30 GMT-0500 (Eastern Standard Time)
+{"topic":"topic2"} was entered as a parameter. Mon Nov 18 2019 11:08:30 GMT-0500 (Eastern Standard Time)
+topic2 json object was sent to the user...Mon Nov 18 2019 11:08:30 GMT-0500 (Eastern Standard Time)
+{"correct":0,"incorrect":5} was passed as a parameter...Mon Nov 18 2019 11:08:34 GMT-0500 (Eastern Standard Time)
+{"correct":0,"incorrect":5} was saved to scores.json...Mon Nov 18 2019 11:08:34 GMT-0500 (Eastern Standard Time)
+Server Running on Port 5000...Mon Nov 18 2019 11:08:35 GMT-0500 (Eastern Standard Time)
+Size of apilog.txt is 102268 bytes
+Score JSON object was returned...Mon Nov 18 2019 11:08:36 GMT-0500 (Eastern Standard Time){"topic":"topic2"} was entered as a parameter. Mon Nov 18 2019 11:08:37 GMT-0500 (Eastern Standard Time)
+topic2 json object was sent to the user...Mon Nov 18 2019 11:08:37 GMT-0500 (Eastern Standard Time)
+Server Running on Port 5000...Mon Nov 18 2019 11:29:04 GMT-0500 (Eastern Standard Time)
+Size of apilog.txt is 102686 bytes
+Server Running on Port 5000...Mon Nov 18 2019 11:29:05 GMT-0500 (Eastern Standard Time)
+Size of apilog.txt is 102809 bytes
+Server Running on Port 5000...Mon Nov 18 2019 11:29:08 GMT-0500 (Eastern Standard Time)
+Size of apilog.txt is 102932 bytes
+Server Running on Port 5000...Mon Nov 18 2019 11:33:47 GMT-0500 (Eastern Standard Time)
+Size of apilog.txt is 103055 bytes
+Server Running on Port 5000...Mon Nov 18 2019 11:33:49 GMT-0500 (Eastern Standard Time)
+Size of apilog.txt is 103178 bytes
+Server Running on Port 5000...Mon Nov 18 2019 11:33:51 GMT-0500 (Eastern Standard Time)
+Size of apilog.txt is 103301 bytes
+{"topic":"topic1"} was entered as a parameter. Mon Nov 18 2019 11:34:20 GMT-0500 (Eastern Standard Time)
+topic1 json object was sent to the user...Mon Nov 18 2019 11:34:20 GMT-0500 (Eastern Standard Time)
+{"topic":"topic6"} was entered as a parameter. Mon Nov 18 2019 11:34:31 GMT-0500 (Eastern Standard Time)
+topic6 json object was sent to the user...Mon Nov 18 2019 11:34:31 GMT-0500 (Eastern Standard Time)
+{"topic":"topic6"} was entered as a parameter. Mon Nov 18 2019 11:34:31 GMT-0500 (Eastern Standard Time)
+topic6 json object was sent to the user...Mon Nov 18 2019 11:34:31 GMT-0500 (Eastern Standard Time)
+{"correct":0,"incorrect":10} was passed as a parameter...Mon Nov 18 2019 11:34:35 GMT-0500 (Eastern Standard Time)
+{"correct":0,"incorrect":10} was saved to scores.json...Mon Nov 18 2019 11:34:35 GMT-0500 (Eastern Standard Time)
+Server Running on Port 5000...Mon Nov 18 2019 11:34:36 GMT-0500 (Eastern Standard Time)
+Size of apilog.txt is 104268 bytes
+Score JSON object was returned...Mon Nov 18 2019 11:34:37 GMT-0500 (Eastern Standard Time){"topic":"topic6"} was entered as a parameter. Mon Nov 18 2019 11:34:40 GMT-0500 (Eastern Standard Time)
+topic6 json object was sent to the user...Mon Nov 18 2019 11:34:40 GMT-0500 (Eastern Standard Time)
+{"topic":"topic6"} was entered as a parameter. Mon Nov 18 2019 11:34:44 GMT-0500 (Eastern Standard Time)
+topic6 json object was sent to the user...Mon Nov 18 2019 11:34:44 GMT-0500 (Eastern Standard Time)
+Server Running on Port 5000...Mon Nov 18 2019 11:36:39 GMT-0500 (Eastern Standard Time)
+Size of apilog.txt is 104891 bytes
+Server Running on Port 5000...Mon Nov 18 2019 11:36:41 GMT-0500 (Eastern Standard Time)
+Size of apilog.txt is 105014 bytes
+Server Running on Port 5000...Mon Nov 18 2019 11:39:12 GMT-0500 (Eastern Standard Time)
+Size of apilog.txt is 105137 bytes
+Server Running on Port 5000...Mon Nov 18 2019 11:39:13 GMT-0500 (Eastern Standard Time)
+Size of apilog.txt is 105260 bytes
+Server Running on Port 5000...Mon Nov 18 2019 11:39:15 GMT-0500 (Eastern Standard Time)
+Size of apilog.txt is 105383 bytes
+{"topic":"topic6"} was entered as a parameter. Mon Nov 18 2019 11:39:49 GMT-0500 (Eastern Standard Time)
+topic6 json object was sent to the user...Mon Nov 18 2019 11:39:49 GMT-0500 (Eastern Standard Time)
+{"correct":0,"incorrect":10} was passed as a parameter...Mon Nov 18 2019 11:39:52 GMT-0500 (Eastern Standard Time)
+{"correct":0,"incorrect":10} was saved to scores.json...Mon Nov 18 2019 11:39:52 GMT-0500 (Eastern Standard Time)
+Server Running on Port 5000...Mon Nov 18 2019 11:39:53 GMT-0500 (Eastern Standard Time)
+Size of apilog.txt is 105940 bytes
+Score JSON object was returned...Mon Nov 18 2019 11:39:54 GMT-0500 (Eastern Standard Time)Server Running on Port 5000...Mon Nov 18 2019 11:42:50 GMT-0500 (Eastern Standard Time)
+Size of apilog.txt is 106153 bytes
+Server Running on Port 5000...Mon Nov 18 2019 11:42:52 GMT-0500 (Eastern Standard Time)
+Size of apilog.txt is 106276 bytes
+Server Running on Port 5000...Mon Nov 18 2019 11:42:54 GMT-0500 (Eastern Standard Time)
+Size of apilog.txt is 106399 bytes
+Server Running on Port 5000...Mon Nov 18 2019 11:44:19 GMT-0500 (Eastern Standard Time)
+Size of apilog.txt is 106522 bytes
+Server Running on Port 5000...Mon Nov 18 2019 11:44:20 GMT-0500 (Eastern Standard Time)
+Size of apilog.txt is 106645 bytes
+Server Running on Port 5000...Mon Nov 18 2019 11:44:23 GMT-0500 (Eastern Standard Time)
+Size of apilog.txt is 106768 bytes
+Server Running on Port 5000...Mon Nov 18 2019 11:45:54 GMT-0500 (Eastern Standard Time)
+Size of apilog.txt is 106891 bytes
+Server Running on Port 5000...Mon Nov 18 2019 11:45:56 GMT-0500 (Eastern Standard Time)
+Size of apilog.txt is 107014 bytes
+Server Running on Port 5000...Mon Nov 18 2019 11:45:59 GMT-0500 (Eastern Standard Time)
+Size of apilog.txt is 107137 bytes
+Server Running on Port 5000...Mon Nov 18 2019 11:47:25 GMT-0500 (Eastern Standard Time)
+Size of apilog.txt is 107260 bytes
+Server Running on Port 5000...Mon Nov 18 2019 11:47:30 GMT-0500 (Eastern Standard Time)
+Size of apilog.txt is 107383 bytes
+Server Running on Port 5000...Mon Nov 18 2019 11:49:00 GMT-0500 (Eastern Standard Time)
+Size of apilog.txt is 107506 bytes
+Server Running on Port 5000...Mon Nov 18 2019 11:49:01 GMT-0500 (Eastern Standard Time)
+Size of apilog.txt is 107629 bytes
+Server Running on Port 5000...Mon Nov 18 2019 11:49:04 GMT-0500 (Eastern Standard Time)
+Size of apilog.txt is 107752 bytes
+{"topic":"topic6"} was entered as a parameter. Mon Nov 18 2019 11:49:41 GMT-0500 (Eastern Standard Time)
+topic6 json object was sent to the user...Mon Nov 18 2019 11:49:41 GMT-0500 (Eastern Standard Time)
+{"correct":0,"incorrect":10} was passed as a parameter...Mon Nov 18 2019 11:49:49 GMT-0500 (Eastern Standard Time)
+{"correct":0,"incorrect":10} was saved to scores.json...Mon Nov 18 2019 11:49:49 GMT-0500 (Eastern Standard Time)
+Server Running on Port 5000...Mon Nov 18 2019 11:49:50 GMT-0500 (Eastern Standard Time)
+Size of apilog.txt is 108309 bytes
+Score JSON object was returned...Mon Nov 18 2019 11:49:51 GMT-0500 (Eastern Standard Time){"topic":"topic6"} was entered as a parameter. Mon Nov 18 2019 11:50:41 GMT-0500 (Eastern Standard Time)
+topic6 json object was sent to the user...Mon Nov 18 2019 11:50:41 GMT-0500 (Eastern Standard Time)
+{"topic":"topic6"} was entered as a parameter. Mon Nov 18 2019 11:50:41 GMT-0500 (Eastern Standard Time)
+topic6 json object was sent to the user...Mon Nov 18 2019 11:50:41 GMT-0500 (Eastern Standard Time)
+{"correct":0,"incorrect":10} was passed as a parameter...Mon Nov 18 2019 11:50:44 GMT-0500 (Eastern Standard Time)
+{"correct":0,"incorrect":10} was saved to scores.json...Mon Nov 18 2019 11:50:44 GMT-0500 (Eastern Standard Time)
+Server Running on Port 5000...Mon Nov 18 2019 11:50:45 GMT-0500 (Eastern Standard Time)
+Size of apilog.txt is 109161 bytes
+Score JSON object was returned...Mon Nov 18 2019 11:50:46 GMT-0500 (Eastern Standard Time){"topic":"topic1"} was entered as a parameter. Mon Nov 18 2019 11:50:54 GMT-0500 (Eastern Standard Time)
+topic1 json object was sent to the user...Mon Nov 18 2019 11:50:54 GMT-0500 (Eastern Standard Time)
+{"topic":"topic1"} was entered as a parameter. Mon Nov 18 2019 11:50:54 GMT-0500 (Eastern Standard Time)
+topic1 json object was sent to the user...Mon Nov 18 2019 11:50:54 GMT-0500 (Eastern Standard Time)
+{"topic":"topic1"} was entered as a parameter. Mon Nov 18 2019 11:50:54 GMT-0500 (Eastern Standard Time)
+topic1 json object was sent to the user...Mon Nov 18 2019 11:50:54 GMT-0500 (Eastern Standard Time)
+{"topic":"topic1"} was entered as a parameter. Mon Nov 18 2019 11:51:01 GMT-0500 (Eastern Standard Time)
+topic1 json object was sent to the user...Mon Nov 18 2019 11:51:01 GMT-0500 (Eastern Standard Time)
+Server Running on Port 5000...Mon Nov 18 2019 11:54:19 GMT-0500 (Eastern Standard Time)
+Size of apilog.txt is 110194 bytes
+Server Running on Port 5000...Mon Nov 18 2019 11:57:38 GMT-0500 (Eastern Standard Time)
+Size of apilog.txt is 110317 bytes
+{"topic":"topic6"} was entered as a parameter. Mon Nov 18 2019 12:00:05 GMT-0500 (Eastern Standard Time)
+topic6 json object was sent to the user...Mon Nov 18 2019 12:00:05 GMT-0500 (Eastern Standard Time)
+{"topic":"topic6"} was entered as a parameter. Mon Nov 18 2019 12:00:13 GMT-0500 (Eastern Standard Time)
+topic6 json object was sent to the user...Mon Nov 18 2019 12:00:13 GMT-0500 (Eastern Standard Time)
+{"topic":"topic6"} was entered as a parameter. Mon Nov 18 2019 12:00:28 GMT-0500 (Eastern Standard Time)
+topic6 json object was sent to the user...Mon Nov 18 2019 12:00:28 GMT-0500 (Eastern Standard Time)
+{"topic":"topic6"} was entered as a parameter. Mon Nov 18 2019 12:00:28 GMT-0500 (Eastern Standard Time)
+topic6 json object was sent to the user...Mon Nov 18 2019 12:00:28 GMT-0500 (Eastern Standard Time)
+{"topic":"topic6"} was entered as a parameter. Mon Nov 18 2019 12:00:28 GMT-0500 (Eastern Standard Time)
+topic6 json object was sent to the user...Mon Nov 18 2019 12:00:28 GMT-0500 (Eastern Standard Time)
+{"correct":0,"incorrect":10} was passed as a parameter...Mon Nov 18 2019 12:00:33 GMT-0500 (Eastern Standard Time)
+{"correct":0,"incorrect":10} was saved to scores.json...Mon Nov 18 2019 12:00:33 GMT-0500 (Eastern Standard Time)
+Server Running on Port 5000...Mon Nov 18 2019 12:00:34 GMT-0500 (Eastern Standard Time)
+Size of apilog.txt is 111694 bytes
+Score JSON object was returned...Mon Nov 18 2019 12:00:35 GMT-0500 (Eastern Standard Time){"topic":"topic6"} was entered as a parameter. Mon Nov 18 2019 13:18:43 GMT-0500 (Eastern Standard Time)
+topic6 json object was sent to the user...Mon Nov 18 2019 13:18:43 GMT-0500 (Eastern Standard Time)
+{"topic":"topic6"} was entered as a parameter. Mon Nov 18 2019 13:18:43 GMT-0500 (Eastern Standard Time)
+topic6 json object was sent to the user...Mon Nov 18 2019 13:18:43 GMT-0500 (Eastern Standard Time)
+{"topic":"topic6"} was entered as a parameter. Mon Nov 18 2019 13:18:43 GMT-0500 (Eastern Standard Time)
+topic6 json object was sent to the user...Mon Nov 18 2019 13:18:43 GMT-0500 (Eastern Standard Time)
+{"topic":"topic6"} was entered as a parameter. Mon Nov 18 2019 13:18:43 GMT-0500 (Eastern Standard Time)
+topic6 json object was sent to the user...Mon Nov 18 2019 13:18:43 GMT-0500 (Eastern Standard Time)
+{"correct":0,"incorrect":10} was passed as a parameter...Mon Nov 18 2019 13:18:48 GMT-0500 (Eastern Standard Time)
+{"correct":0,"incorrect":10} was saved to scores.json...Mon Nov 18 2019 13:18:48 GMT-0500 (Eastern Standard Time)
+Server Running on Port 5000...Mon Nov 18 2019 13:18:49 GMT-0500 (Eastern Standard Time)
+Size of apilog.txt is 112956 bytes
+Score JSON object was returned...Mon Nov 18 2019 13:18:50 GMT-0500 (Eastern Standard Time){"topic":"topic6"} was entered as a parameter. Mon Nov 18 2019 13:18:52 GMT-0500 (Eastern Standard Time)
+topic6 json object was sent to the user...Mon Nov 18 2019 13:18:52 GMT-0500 (Eastern Standard Time)
+{"topic":"topic6"} was entered as a parameter. Mon Nov 18 2019 13:18:56 GMT-0500 (Eastern Standard Time)
+topic6 json object was sent to the user...Mon Nov 18 2019 13:18:56 GMT-0500 (Eastern Standard Time)
