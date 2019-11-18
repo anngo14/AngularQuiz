@@ -2,7 +2,6 @@ var express = require('express');
 var path = require('path');
 var fs = require('fs');
 var bodyparser = require('body-parser');
-var https = require('https');
 var axios = require('axios');
 
 //Write Stream
