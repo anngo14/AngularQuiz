@@ -2,9 +2,6 @@
   <h1 style="cursor:default; margin-right:10px;">Quiz  </h1>
   <img src="../assets/quiz-icon.png" height="auto" width="3%" />
   <span style="flex: 1 1 auto"></span>
-  <div *ngIf="username === ''">
-      <a mat-button routerLink="/login">Login</a>
-  </div>
   <div *ngIf="username != ''" >  
       <button mat-button [matMenuTriggerFor]="menu">{{username | titlecase}}</button>
   </div>
